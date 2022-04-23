@@ -1,0 +1,11 @@
+form {
+    background-color: rgb(159, 238, 159);
+}
+
+fieldset {
+    text-align: center;
+}
+
+label {
+    line-height: 40px;
+}
