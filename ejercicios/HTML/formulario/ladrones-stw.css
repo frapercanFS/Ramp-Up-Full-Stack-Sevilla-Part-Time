@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+label {
+    align-items: center ;
+    display: block;
+}
+
+form {
+    align-self: center;
+    width: 500px;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    cursor: pointer;
+}
+
+#modelos {
+    display: flex;
+flex-direction: column;
+}
