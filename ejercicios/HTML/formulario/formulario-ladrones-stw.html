@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="ladrones-stw.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>ladrones de bicicletas</title>
 </head>
 
@@ -21,36 +24,39 @@
                 <input type="color" id="color" name="color" tabindex="2">
 
                 <label for="precio">Precio de la bicicleta</label>
-                <label for="precio">Precio</label>
+                <label for="precio" id="precio-label">Precio</label>
                 <input type="range" id="precio" name="precio" value="100" min="50" max="500" step="50" tabindex="3"
                     oninput="this.nextElementSibling.value = this.value">
                 <output>100</output>
                 <h3>tipo de bicicleta</h3>
-                <ul id="modelos">
-                    <li>Paseo</li>
-                    <input type="radio" id="senorial" name="paseo" tabindex="4">
-                    <label for="senorial">Señorial</label>
-                    <input type="radio" id="antipebleyos" name="paseo">
-                    <label for="antiplebeyos">Anti plebeyos</label>
-                    <input type="radio" id="por-encima" name="paseo">
-                    <label for="por-encima">por encima del hombro</label>
 
-                    <li>Montaña</li>
-                    <input type="radio" id="gamusinos" name="montana" tabindex="5">
-                    <label for="gamusinos">gamusinos</label>
-                    <input type="radio" id="huele-flores" name="montana">
-                    <label for="huele-flores">Huele flores</label>
-                    <input type="radio" id="fango-lover" name="montana">
-                    <label for="fango-lover">fango lover</label>
+                <div>
+                    <ul>
+                        <li>Paseo</li>
+                        <input type="radio" id="senorial" name="paseo" tabindex="4">
+                        <label for="senorial">Señorial</label>
+                        <input type="radio" id="antipebleyos" name="paseo">
+                        <label for="antiplebeyos">Anti plebeyos</label>
+                        <input type="radio" id="por-encima" name="paseo">
+                        <label for="por-encima">por encima del hombro</label>
 
-                    <li>Carreras</li>
-                    <input type="radio" id="metro-medio" name="carreras" tabindex="6">
-                    <label for="metro-medio">Metro y medio</label>
-                    <input type="radio" id="fluorescente" name="carreras">
-                    <label for="fluorescente">3 de la tarde fluorescente ed.</label>
-                    <input type="radio" id="grupitos" name="carreras">
-                    <label for="grupitos">Grupitors</label>
-                </ul>
+                        <li>Montaña</li>
+                        <input type="radio" id="gamusinos" name="montana" tabindex="5">
+                        <label for="gamusinos">gamusinos</label>
+                        <input type="radio" id="huele-flores" name="montana">
+                        <label for="huele-flores">Huele flores</label>
+                        <input type="radio" id="fango-lover" name="montana">
+                        <label for="fango-lover">fango lover</label>
+
+                        <li>Carreras</li>
+                        <input type="radio" id="metro-medio" name="carreras" tabindex="6">
+                        <label for="metro-medio">Metro y medio</label>
+                        <input type="radio" id="fluorescente" name="carreras">
+                        <label for="fluorescente">3 de la tarde fluorescente ed.</label>
+                        <input type="radio" id="grupitos" name="carreras">
+                        <label for="grupitos">Grupitors</label>
+                    </ul>
+                </div>
 
                 <label for="accesorios">Accesorios</label>
                 <select name="accesorios" id="accesorios" multiple tabindex="7">
@@ -63,8 +69,9 @@
                     <option value="foco">foco</option>
                 </select>
 
-                <label>Choose a browser from this list:
-                    <input list="marcas" name="mi-marca" tabindex="8"></label>
+
+                <label for="marcas" class="marcas">Choose a browser from this list:
+                    <input list="marcas" name="mi-marca" tabindex="8" class="marcas"></label>
                 <datalist id="marcas">
                     <option value="specialized">
                     <option value="trek">

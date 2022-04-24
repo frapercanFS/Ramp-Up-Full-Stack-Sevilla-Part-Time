@@ -1,16 +1,15 @@
-body {
+* {
     box-sizing: border-box;
-    background-color: blanchedalmond;
-    text-align: center;
+    background-color: rgb(247, 245, 241);
+    font-family: 'Montserrat', sans-serif;
 }
 
 label {
-    align-items: center ;
     display: block;
+    cursor: pointer;
 }
 
 form {
-    align-self: center;
     width: 500px;
     margin: auto;
 }
@@ -23,7 +22,34 @@ input[type="reset"]:hover {
     cursor: pointer;
 }
 
-#modelos {
+li {
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+div label {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    margin-top: -22px;
+    font-size: 15px;
+}
+
+.marcas {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+select {
+    width: 100%;
+}
+
+legend {
+    text-align: center;
+    font-weight: 700;
+}
+
+input.marcas {
+    height: 20px;
 }
