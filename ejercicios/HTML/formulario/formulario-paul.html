@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario-paul.css">
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Los ladronzuelos de bicicletas</legend>
+        <form action="">
+            <label for="dia" id="titulo">Día:</label>
+            <input type="date" id="dia" name="dia" autofocus tabindex="1">
+            <label for="hora" id="titulo">Hora:</label>
+            <input type="time" id="hora" name="hora" tabindex="2">
+            <label for="color-bici" id="titulo">Color de la bicicleta:</label>
+            <input type="color" id="color-bici" name="color-bici" tabindex="3">
+            <label for="precio" id="titulo">Precio</label>
+            <input type="range" id="precio" step="10" name="precio" value="100" min="0" max="500"
+                oninput="this.nextElementSibling.value = this.value">
+            <output>100</output>
+            <label for="tipo-bici" id="titulo">Tipo de Bici:</label>
+            <select name="tipo-bici" id="tipo-bici" tabindex="4">
+                <option selected value="o">Elige un valor</option>
+                <optgroup label="paseo">
+                    <option value="senorial">Señorial</option>
+                    <option value="anti-plebeyos">Anti-plebeyos</option>
+                    <option value="porencimadelhombro">Porencimadelhombro</option>
+                </optgroup>
+                <optgroup label="montaña">
+                    <option value="gamusinos">Gamusinos</option>
+                    <option value="hueleflores-premiun">Hueleflores-premiun</option>
+                    <option value="fango-lover">Fango-lover</option>
+                </optgroup>
+                <optgroup label="carreras">
+                    <option value="metroymedio">Metro y medio</option>
+                    <option value="3 de la tarde. fluorescente edition">3 de la tade. fluorescente edition</option>
+                    <option value="grupitors">grupitors</option>
+                </optgroup>
+
+
+            </select>
+            <label for="accesorios" id="titulo">Accesorios</label>
+            <input type="checkbox" id="ruedines" name="ruedines" value="ruedines" tabindex="5">
+            <label for="ruedines"> Ruedines</label>
+            <input type="checkbox" id="pegatinas" name="pegatinas" value="pegatinas" tabindex="6">
+            <label for="pegatinas"> Pegatinas</label>
+            <input type="checkbox" id="cestita" name="cestita" value="cestita" tabindex="7">
+            <label for="cestita"> Cestita</label>
+            <input type="checkbox" id="bomba de aire" name="bomba de aire" value="bomba de aire" tabindex="8">
+            <label for="bomba de aire"> Bomba de aire</label>
+            <input type="checkbox" id="Timbre" name="Timbre" value="Timbre" tabindex="9">
+            <label for="Timbre"> Timbre</label>
+            <input type="checkbox" id="foco" name="foco" value="foco" tabindex="10">
+            <label for="foco"> Foco</label>
+
+
+            <label for="marca" id="titulo">Marca de la bicicleta</label>
+            <input list="marcas" id="marca" name="marca" tabindex="11">
+            <datalist id="marcas">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bianchi"></option>
+                <option value="bh"></option>
+                <option value="factor"></option>
+                <option value="ghost"></option>
+                <option value="cervelo"></option>
+                <option value="argon"></option>
+            </datalist>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+
+
+
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
