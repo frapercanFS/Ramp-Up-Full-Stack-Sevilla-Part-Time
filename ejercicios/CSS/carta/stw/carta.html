@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.pixabay.com/photo/2017/01/07/18/15/magi-1961149_960_720.png"> <!-- fondo header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <title>Carta para los reyes magos</title>
 </head>
 
@@ -25,26 +28,27 @@
         <div id="destinatario">
             <table>
                 <tr>
-                    <th>destinatario</th>
+                    <th>Destinatario</th>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>Nombre</td>
+                    <td>Nombre:</td>
                     <td>Melchor, Gaspar y Baltasar</td>
                 </tr>
                 <tr>
-                    <td>Direccion</td>
+                    <td>Direccion:</td>
                     <td>Calle la luna 125</td>
                 </tr>
                 <tr>
-                    <td>Localidad</td>
+                    <td>Localidad:</td>
                     <td>Sevilla</td>
                 </tr>
                 <tr>
-                    <td>Provincia</td>
+                    <td>Provincia:</td>
                     <td>Sevilla</td>
                 </tr>
                 <tr>
-                    <td>Codigo Postal</td>
+                    <td>Codigo Postal:</td>
                     <td>41013</td>
                 </tr>
             </table>
@@ -53,14 +57,17 @@
         <div id="presentacion">
             <h2>Queridos reyes magos</h2>
             <p>Hola, mi nombre es Stewart y el motivo de escribiros esta carta es para saber cuanto he aprendido de
-                programacion hasta ahora. No solo creo en vosotros sino que me he convertido en uno de los vuestros.</p>
+                programacion hasta ahora. He intentado ser bueno durante todo el año, aunque a veces tenga ganas de
+                matar a alguien pero me contengo y hasta ahora no he realizado ningun acto ilegal(lo de pisar a la
+                cucaracha no cuenta, fue sin querer). Queda menos de un mes para que me visiteis y estoy arreglando la
+                casa para que la veais en orden cuando llegueis.</p>
         </div>
 
         <div id="comportamiento">
             <h2>A lo largo del año</h2>
             <p>A lo largo del año me he portado muy bien, no he dicho ningun insulto ni faltado el respeto a nadie.
                 Tampoco he sido el mejor del mundo pero en general he sido bueno. Os dejo una lista de buenos actos:</p>
-            <ul>
+            <ul id="hechos">
                 <li>Adoptar un gato callejero</li>
                 <li>Ayudar a una señora mayor a subir la compra</li>
                 <li>Aprender a tocar el tambor</li>
@@ -71,13 +78,22 @@
             <h2>Mi peticion</h2>
             <p>No soy una persona avariciosa, y por ello tampoco deseo nada del otro mundo.</p>
             <p>Como dijo mi padre una vez: <q>No es mas rico quien mas tiene sino quien menos necesita</q></p>
-            <p>Os dejo una serie de cosas que me gustaría, entiendo que algunas son dificiles de conseguir, enumerado de
-                mayor a menor deseo</p>
+            <p>Os escribo una serie de regalos que me gustaría recibir,aunque entiendo que algunas son dificiles de
+                conseguir, enumerado de mayor a menor deseo:</p>
             <ol>
                 <li>Un dinosaurio</li>
                 <li>Un unicornio</li>
                 <li>un dragon</li>
             </ol>
+            <div class="imagenes">
+                <img id="dino" src="https://cdn.pixabay.com/photo/2019/02/04/03/30/dinosaur-3973897_960_720.png"
+                    alt="imagen de un dino">
+                <img id="unicorn" src="https://cdn.pixabay.com/photo/2017/01/31/08/26/animal-2023216_960_720.png"
+                    alt="imagen de un unicornio">
+                <img id="dragon" src="https://cdn.pixabay.com/photo/2017/08/09/18/51/dragon-2615470_960_720.png"
+                    alt="imagen de un dragon">
+
+            </div>
         </div>
         <div id="despedida">
             <h2>Hora de despedirse</h2>
@@ -91,14 +107,14 @@
     </main>
 
     <footer>
-        <ul>Relacionados</ul>
-        <li>Carta de Paul</li>
-        <li>Carta de David</li>
-        <li>Carta de Edu</li>
-        <li>Carta de Tereza</li>
-        <li>Carta de Fran</li>
-
-
+        <p>Relacionados</p>
+        <ul>
+            <li><a href="/ejercicios/CSS/carta/paul/carta.html">Carta de Paul</a></li>
+            <li><a href="/ejercicios/CSS/carta/david/carta.html">Carta de David</a></li>
+            <li><a href="/ejercicios/CSS/carta/edu/carta.html">Carta de Edu</a></li>
+            <li><a href="/ejercicios/CSS/carta/tereza/carta.html">Carta de Tereza</a></li>
+            <li><a href="/ejercicios/CSS/carta/fran/carta.html">Carta de Fran</a></li>
+        </ul>
     </footer>
 
 </body>
