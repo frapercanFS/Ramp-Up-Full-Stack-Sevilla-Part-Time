@@ -1,0 +1,14 @@
+.postcard {background-color: #B21729; width: 700px; height: 600 px; margin: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);} 
+
+.postcard h1 {margin: 2; text-align: center; font-size: 30px; font-family: sans-serif;}
+
+.name {font-family: cursive; font-size: 25px; text-align: center;}
+
+.body img { width: 400px; height: 300px; float: right;} 
+body {overflow: hidden;}
+
+p {font size: 22px; font-family: georgia; text-align: center; }
+
+.end {font size: 30px; font-family: bradley Hand; padding-bottom: 2cm; padding-top: 2cm; text-align: center;} 
+
+.signiture {font size: 35px; font-family: bradley Hand; text-align: center; } 
