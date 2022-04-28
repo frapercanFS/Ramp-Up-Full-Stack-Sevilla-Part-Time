@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(235, 250, 255);
+}
+
+header {
+  list-style-type: style type;
+  ;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  color: blue;
+}
+
+#ele1 {
+  background-color: brown;
+}
+
+#ele2 {
+  text-align: center;
+  border: 3px solid green;
+}
+
+* {
+  font-family: "Arial"
+}
+
+.centre {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+a[target="_ele"] {
+  background-color: yellow;
+}
+
+footer p {
+  text-align: right;
+  font-size: 14px;
+}
