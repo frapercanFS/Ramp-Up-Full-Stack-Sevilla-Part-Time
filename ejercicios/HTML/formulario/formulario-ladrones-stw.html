@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ladrones-stw.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>ladrones de bicicletas</title>
+</head>
+
+<body>
+    <form>
+        <fieldset id="info">
+            <form>
+                <legend>Ladrones de bicicletas</legend>
+
+                <label for="fecha">Dia</label>
+                <input type="date" id="fecha" name="fecha" tabindex="1" autofocus min="01-01-2022">
+                <label for="color">Color de la bicicleta sustraida:</label>
+                <input type="color" id="color" name="color" tabindex="2">
+
+                <label for="precio">Precio de la bicicleta</label>
+                <label for="precio" id="precio-label">Precio</label>
+                <input type="range" id="precio" name="precio" value="100" min="50" max="500" step="50" tabindex="3"
+                    oninput="this.nextElementSibling.value = this.value">
+                <output>100</output>
+                <h3>tipo de bicicleta</h3>
+
+                <div>
+                    <ul>
+                        <li>Paseo</li>
+                        <input type="radio" id="senorial" name="paseo" tabindex="4">
+                        <label for="senorial">Señorial</label>
+                        <input type="radio" id="antipebleyos" name="paseo">
+                        <label for="antiplebeyos">Anti plebeyos</label>
+                        <input type="radio" id="por-encima" name="paseo">
+                        <label for="por-encima">por encima del hombro</label>
+
+                        <li>Montaña</li>
+                        <input type="radio" id="gamusinos" name="montana" tabindex="5">
+                        <label for="gamusinos">gamusinos</label>
+                        <input type="radio" id="huele-flores" name="montana">
+                        <label for="huele-flores">Huele flores</label>
+                        <input type="radio" id="fango-lover" name="montana">
+                        <label for="fango-lover">fango lover</label>
+
+                        <li>Carreras</li>
+                        <input type="radio" id="metro-medio" name="carreras" tabindex="6">
+                        <label for="metro-medio">Metro y medio</label>
+                        <input type="radio" id="fluorescente" name="carreras">
+                        <label for="fluorescente">3 de la tarde fluorescente ed.</label>
+                        <input type="radio" id="grupitos" name="carreras">
+                        <label for="grupitos">Grupitors</label>
+                    </ul>
+                </div>
+
+                <label for="accesorios">Accesorios</label>
+                <select name="accesorios" id="accesorios" multiple tabindex="7">
+                    <option value="ninguno">ninguno</option>
+                    <option value="ruedines">ruedines</option>
+                    <option value="pegatinas">pegatinas</option>
+                    <option value="cestita">cestita</option>
+                    <option value="bomba">bomba de aire</option>
+                    <option value="timbre">timbre</option>
+                    <option value="foco">foco</option>
+                </select>
+
+
+                <label for="marcas" class="marcas">Choose a browser from this list:
+                    <input list="marcas" name="mi-marca" tabindex="8" class="marcas"></label>
+                <datalist id="marcas">
+                    <option value="specialized">
+                    <option value="trek">
+                    <option value="merida">
+                    <option value="scott">
+                    <option value="giant">
+                    <option value="cube">
+                    <option value="lapierre">
+                    <option value="orbea">
+                    <option value="cannondale">
+                    <option value="bmc">
+                    <option value="canyon">
+                    <option value="look">
+                    <option value="protek">
+                    <option value="megamo">
+                    <option value="pinarello">
+                    <option value="bianchi">
+                    <option value="bh">
+                    <option value="factor">
+                    <option value="ghost">
+                    <option value="cervelo">
+                    <option value="argon">
+                </datalist>
+
+                <input type="reset" value="reset">
+                <input type="submit" value="submit" tabindex="9">
+            </form>
+        </fieldset>
+    </form>
+</body>
+
+</html>

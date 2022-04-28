@@ -1,0 +1,9 @@
+img, video, audio {
+    width: 250px;
+    height: 250px;
+}
+
+th {
+    font-size: large;
+    background-color: aquamarine;
+}

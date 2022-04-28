@@ -1,0 +1,17 @@
+table,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    line-height: 30px;
+}
+
+th {
+    background-color: rgba(206, 214, 215, 0.493);
+    width: 200px;
+}
+
+td {
+    width: 100px;
+}
+table {
+    width: auto;
+}
