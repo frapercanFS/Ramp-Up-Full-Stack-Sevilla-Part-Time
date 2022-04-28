@@ -1,0 +1,104 @@
+* {
+    text-align: justify;
+    margin: 5px 15px;
+    font-family: 'Lora', serif;
+}
+
+div {
+    padding: 20px;
+}
+
+header {
+    background-image:
+        url(https://cdn.pixabay.com/photo/2017/01/07/18/15/magi-1961149_960_720.png);
+    background-size: contain;
+    color: aqua;
+    text-align: center;
+}
+
+header li,
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+header li:hover,
+footer li:hover {
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(146, 255, 4, 0.637);
+}
+
+#destinatario {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row-reverse;
+    text-align: right;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+p {
+    font-size: 20px;
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(220, 248, 248);
+    margin-top: 15px;
+}
+
+footer ul,
+footer li {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-between;
+    background-color: rgb(245, 241, 236);
+}
+
+footer p {
+    text-align: center;
+    background-color: bisque;
+}
+
+footer li {
+    border-radius: 100%;
+    padding: 45px 10px;
+    background-color: bisque;
+}
+
+ul#hechos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h4 {
+    text-align: right;
+    padding-top: 12px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#dino {
+    width: 310px;
+    height: 270px;
+}
+
+#unicorn {
+    width: 250px;
+    height: 250px;
+}
+
+#dragon {
+    width: 250px;
+    height: 250px;
+}
