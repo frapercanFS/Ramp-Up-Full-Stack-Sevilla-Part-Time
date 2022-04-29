@@ -1,0 +1,19 @@
+* {
+    background-color: rgb(67, 126, 216);
+}
+
+div {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
