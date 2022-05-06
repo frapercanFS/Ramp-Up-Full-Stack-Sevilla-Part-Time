@@ -1,10 +1,13 @@
+header {
+  font-family: 'Radio Canada', sans-serif;
+}
+
 h1 {
   display: flex;
   justify-content: center;
   color: aliceblue;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 45px;
-  padding-top: 20px;
+  font-size: 50px;
+  margin-bottom: -5px;
 }
 
 ul {
@@ -13,12 +16,12 @@ ul {
   list-style-type: none;
   overflow: hidden;
   text-transform: uppercase;
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(58, 58, 58);
 }
 
 li {
   float: left;
-  flex-grow: 1;
+  width: 100%;
 }
 
 li a {
@@ -30,7 +33,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgb(80, 66, 66);
 }
 
 header {
@@ -38,7 +41,7 @@ header {
 }
 
 body {
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.171);
 }
 
 footer {
