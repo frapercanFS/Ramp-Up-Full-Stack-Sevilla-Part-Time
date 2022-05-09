@@ -1,0 +1,45 @@
+
+.container img {border-radius: 50%; flex-direction: column; text-align: right; overflow: hidden;justify-content: space-between;}
+
+.body {background-color:skyblue; text-align:center}
+
+/* .info { color: grey; float: right; display: flex; flex-direction: column;padding-right: -2cm;align-items:center;} */
+.info { color: grey; float: right; text-align: left;}
+
+.container {  width: 400px; background-color: white;
+    padding-right: 0.7cm; padding-top: 0.4cm; padding-bottom: 0.4cm; padding-left: 0.7cm;
+    margin: auto; margin-top: 1.5cm;
+    height: 600; 
+    border: 3px ;
+    }
+
+    hr {
+        border:none;
+        color:rgba(255, 255, 255, 0.042);
+        background-color:rgba(161, 152, 152, 0.704);
+        height:1px;
+        width:100%;
+        align:left;
+      }
+
+    .row {display: flex; flex-direction: row;}
+
+    .leftcol {width: 20%;}
+
+    .rightcol {width: 50%; padding-left: 1.3cm; text-align: left; flex-direction: column; transition-property: padding-left;
+        transition-duration: 4s;}
+
+    
+    h3 {font-size: larger; font-family: sans-serif; font-weight: bolder; margin-bottom: -12px;}
+
+    p {font-size: medium; font-family: sans-serif; color:rgba(81, 77, 77, 0.429);}
+
+    #rocio {width: 50%; padding-left: 1.3cm; text-align: left; flex-direction: column; transition-property: padding-left, color, font-size;
+        transition-duration: 1s;}
+
+    #rocio:hover {
+                   font-size: 20px;
+                   color: blueviolet;
+                   padding-left: 4cm;
+                    }
+    
