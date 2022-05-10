@@ -8,28 +8,6 @@ div {
     padding: 20px;
 }
 
-header {
-    background-image:
-        url(https://cdn.pixabay.com/photo/2017/01/07/18/15/magi-1961149_960_720.png);
-    background-size: contain;
-    color: aqua;
-    text-align: center;
-}
-
-header li,
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 0px;
-}
-
-header li:hover,
-footer li:hover {
-    cursor: pointer;
-    box-shadow: 0 0 11px rgba(146, 255, 4, 0.637);
-}
-
 #destinatario {
     display: flex;
     flex-grow: 1;

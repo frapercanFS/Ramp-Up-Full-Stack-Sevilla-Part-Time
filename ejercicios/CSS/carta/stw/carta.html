@@ -10,21 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <script src="/include.js"></script>
     <title>Carta para los reyes magos</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1>Mi carta para los reyes magos</h1>
-        <ul>
-            <li>Queridos reyes magos</li>
-            <li>Mis deseos</li>
-            <li>Despedida</li>
-            <li>Acerda de</li>
-        </ul>
-    </header>
 
     <main>
+        <div w3-include-html="header.html"></div>
         <div id="destinatario">
             <table>
                 <tr>
@@ -117,6 +110,9 @@
         </ul>
     </footer>
 
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
