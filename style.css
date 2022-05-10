@@ -45,7 +45,13 @@ body {
 }
 
 footer {
-  background-color: purple;
+  background-color: rgba(31, 31, 31, 0.3);
+  backdrop-filter: grayscale() blur(10px);
+  font-family: Colibri;
+}
+
+footer li {
+  background-color: rgb(213, 218, 223);
 }
 
 .indice {
