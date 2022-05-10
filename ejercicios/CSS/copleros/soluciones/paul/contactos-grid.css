@@ -18,5 +18,4 @@ height:100px;
 .grid-item {
     padding: 15px;
     border-bottom: 1px solid rgba(29, 27, 27, 0.315);
-    border-start-end-radius: 80px;
-}
+    border-spacing: ;
