@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/funciones/include.js"></script>
+    <script src="/funciones/menu-desplegable.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
-  <script src="/include.js"></script>
-  <title>Página principal del proyecto de clase</title>
+    <title>Página principal del proyecto de clase</title>
+  </head>
 
-</head>
+  <body>
+    <div w3-include-html="/componentes/header/header.html"></div>
+    <main>Cuerpo de la página</main>
+    <div w3-include-html="/componentes/footer/footer.html"></div>
 
-<body>
-  <div w3-include-html="header.html"></div>
-  <main>Cuerpo de la página</main>
-  <div w3-include-html="footer.html"></div>
-
-  <script>
-    includeHTML();
-  </script>
-</body>
-
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>
