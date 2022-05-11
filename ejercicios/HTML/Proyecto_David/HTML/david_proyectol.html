@@ -9,12 +9,15 @@
     <meta name=”description” content='Primer HTML The Bridge'>
     <meta name=”generator” content=”www.”>
     <meta name=”keywords” content='David, Edu, Fran, Paul, Stewart, Tereza .'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledavid.css">
+    <script src="../../funciones/include.js"></script>
     <title>David - HTML The Bridge</title>
 </head>
 
 <body>
     <header>
+
+        <div w3-include-html="../../header/header.html"></div>
         <div id="logo">
             <h1>Espacio para el logo</h1>
         </div>
@@ -55,9 +58,14 @@
 
             </div>
         <div class='redes'>
-            <a href="https://www.instagram.com/idavid80/"><img src="imagenes/instagram.png" height="50px"  alt="instagram"></a>
+            <a href="https://www.instagram.com/idavid80/"><img src="imagenes/ig.jpg" height="50px"  alt="instagram"></a>
         </div>
     </main>
+
+    <div w3-include-html="../../footer/footer.html"></div>
+    <script>
+      includeHTML();
+    </script>
     <foot>
         <div class='mapa-web'>
         <a href="http://">Edu</a>
@@ -71,5 +79,3 @@
 
     </foot>
 </body>
-
-</html>
