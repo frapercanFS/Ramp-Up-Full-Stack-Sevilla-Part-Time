@@ -1,0 +1,95 @@
+body,
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: aqua;
+}
+
+.hero {
+    background-color: red;
+}
+
+.content {
+    background-color: blueviolet;
+}
+
+.sidebar {
+    background-color: rgb(255, 155, 4);
+}
+
+footer {
+    background-color: rgb(0, 255, 26);
+}
+
+div,
+footer,
+header {
+    margin: 5px 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    body,
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: aquamarine;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .content {
+        max-width: 49%;
+        max-height: max-content;
+    }
+
+    .sidebar {
+        max-width: 48%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    body,
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-grow:;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+        margin: 0 163px;
+    }
+
+    .content {
+        max-width: 59%;
+        align-self: stretch;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .sidebar {
+        max-width: 19%;
+        align-self: stretch;
+    }
+}
