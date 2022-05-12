@@ -6,7 +6,7 @@ main {
     margin: 3px;
     padding: 3px;
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
@@ -79,3 +79,5 @@ footer {
     footer {
         background-color: #606060;
         grid-row: 8/9;
+    }
+}
