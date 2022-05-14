@@ -15,4 +15,3 @@ var booleanoAnd = booleano1 == booleano2;
 console.log(5, booleanoAnd);
 
 var incrementarDesp = 2;
-var resultadoDesp = 
