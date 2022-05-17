@@ -2,20 +2,17 @@
 <html lang="es">
 
 <link rel="stylesheet" href="styledavid.css">
-<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/funciones/include.js"></script>
-<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/funciones/menu-desplegable.js"></script>
-<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/Proyecto_David/HTML/js_funciones/botones.js"></script>
+<script src="/funciones/include.js"></script>
+<script src="/funciones/menu-desplegable.js"></script>
+<script src="/ejercicios/HTML/Proyecto_David/HTML/js-funciones/botones.js"></script>
 <script>
     function calcularEdad() {
       // tomar este año como un número
      
       var date = new Date();
       var edad = date.getFullYear()-1980;
-      
-    {
-      var edad = document.getElementById("miEdad").innerHTML;
+      document.getElementById("miEdad").innerHTML = edad;
     
-    }
     }
     </script>
     <script>
@@ -80,7 +77,7 @@
 <body>
     <header>
 
-        <div w3-include-html="/Ramp-Up-Full-Stack-Sevilla-Part-Time/componentes/header/header.html"></div>
+        <div w3-include-html="/componentes/header/header.html"></div>
 
     </header>
     <main>
@@ -105,25 +102,25 @@
                 <div id="ejercicios" class="ejercicios-menu">
                     <a href="#home">Carta</a>
                     <a
-                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/formulario/formulario-david.html">Formulario</a>
+                        href="/ejercicios/HTML/formulario/formulario-david.html">Formulario</a>
                     <a
-                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/gimnasio/gatitos_david.html">Gatitos</a>
+                        href="/ejercicios/HTML/gimnasio/gatitos_david.html">Gatitos</a>
                 </div>
             </div>
             <div class="menu-css" id="menu-ejercicios">
                 <button onclick="myFunctioncss()" class="boton-menu" id="boton-css">CSS</button>
                 <div id="ejercicios-css" class="ejercicios-css">
-                    <a href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/carta/david/carta.html">Carta</a>
+                    <a href="/ejercicios/CSS/carta/david/carta.html">Carta</a>
                     <a
-                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/copleros/soluciones/david/copleros_david.html">Copleros</a>
+                        href="/ejercicios/CSS/copleros/soluciones/david/copleros_david.html">Copleros</a>
                     <a
-                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/responsive/responsive_david.html">Responsive</a>
+                        href="/ejercicios/CSS/responsive/responsive_david.html">Responsive</a>
                 </div>
             </div>
             <div class="menu-js" id="menu-ejercicios">
                 <button onclick="myFunctionjs()" class="boton-menu" id="boton-js">Javascript</button>
                 <div id="ejercicios-js" class="ejercicios-js">
-                    <a href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/JS/bikram_0/">Bikram_0</a>
+                    <a href="/ejercicios/JS/bikram_0/">Bikram_0</a>
 
                 </div>
             </div>
@@ -133,11 +130,12 @@
 
 
     <foot>
-        <div w3-include-html="/Ramp-Up-Full-Stack-Sevilla-Part-Time/componentes/footer/footer.html"></div>
+        <div w3-include-html="/componentes/footer/footer.html"></div>
 
     </foot>
     <script>
         includeHTML();
+        calcularEdad();
     </script>
 </body>
 
