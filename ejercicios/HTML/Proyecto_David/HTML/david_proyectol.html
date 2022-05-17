@@ -1,81 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”author” content='FranCanales&TheBridgeStudents'>
-    <meta name=”description” content='Primer HTML The Bridge'>
-    <meta name=”generator” content=”www.”>
-    <meta name=”keywords” content='David, Edu, Fran, Paul, Stewart, Tereza .'>
-    <link rel="stylesheet" href="styledavid.css">
-    <script src="../../funciones/include.js"></script>
-    <title>David - HTML The Bridge</title>
+<link rel="stylesheet" href="styledavid.css">
+<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/funciones/include.js"></script>
+<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/funciones/menu-desplegable.js"></script>
+<script src="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/Proyecto_David/HTML/js_funciones/botones.js"></script>
+<script>
+    function calcularEdad() {
+      // tomar este año como un número
+     
+      var date = new Date();
+      var edad = date.getFullYear()-1980;
+      
+    {
+      var edad = document.getElementById("miEdad").innerHTML;
+    
+    }
+    }
+    </script>
+    <script>
+        function myFunctionhtml() {
+            document.getElementById("ejercicios").classList.toggle("show");
+        }
+    
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.boton-menu')) {
+                var soluciones = document.getElementsByClassName("ejercicios-menu");
+                var i;
+                for (i = 0; i < soluciones.length; i++) {
+                    var abrir_soluciones = soluciones[i];
+                    if (abrir_soluciones.classList.contains('show')) {
+                        abrir_soluciones.classList.remove('show');
+                    }
+                }
+            }
+        }    
+    </script>
+        <script>
+                function myFunctioncss() {
+            document.getElementById("ejercicios-css").classList.toggle("show-css");
+        }
+        
+        window.onclick = function (event) {
+            if (!event.target.matches('.boton-css')) {
+                var soluciones = document.getElementsByClassName("ejercicios-css");
+                var i;
+                for (i = 0; i < soluciones.length; i++) {
+                    var abrir_soluciones = soluciones[i];
+                    if (abrir_soluciones.classList.contains('show-css')) {
+                        abrir_soluciones.classList.remove('show-css');
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <script>
+        function myFunctionjs() {
+    document.getElementById("ejercicios-js").classList.toggle("show-js");
+    }
+    
+    window.onclick = function (event) {
+    if (!event.target.matches('.boton-js')) {
+        var dropdown = document.getElementsByClassName("ejercicios-js");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show-js')) {
+                openDropdown.classList.remove('show-js');
+            }
+        }
+    }
+    }
+    </script>
+<title>David - HTML The Bridge</title>
 </head>
 
 <body>
     <header>
 
-        <div w3-include-html="../../header/header.html"></div>
-        <div id="logo">
-            <h1>Espacio para el logo</h1>
-        </div>
+        <div w3-include-html="/Ramp-Up-Full-Stack-Sevilla-Part-Time/componentes/header/header.html"></div>
 
-        <nav id="navegador">
-            <ul>
-                <ul class="cursos"><h3 class="nav">Que aprendemos</h3>
-                <a href="http://"><li>HTML</li></a>
-                <a href="http://"><li>CSS</li></a>
-                <a href="http://"><li>Java</li></a>
-                </ul>
-                <ul class="part-time"><h3>Equipo part-time</h3>
-                    <li>Profesor: <a href="http://">Canales</a></li>
-                </ul>
-                    <ul>
-                    <li>Alumnos:</li>
-                    <li><a href="/david_proyectol.html">David</a></li>
-                    <li><a href="http://">Edu</a></li>
-                    <li><a href="http://">Fran</a></li>
-                    <li><a href="http://">Paul</a></li>
-                    <li><a href="http://">Stewart</a></li>
-                    <li><a href="http://">Teresa</a></li>
-                    </ul>
-                </ul>
-            </ul>
-        </nav>
     </header>
     <main>
         <h2 class="estudiante">David Domínguez</h2>
         <article>
             <div class="david">
-                <p>Alumno de The Bridge, que está realizando un part-time de Full Stack. Aspira a desarrollar webs y apps que puedan 
-                ser útiles y fáciles de usar, además de dotarlas  de un diseño atractivo e intuitivo para los usuarios.
-                David es de Sevilla, actualmente tiene (edad que actualice) colabora con sus compañeros de The Bridge para poder sacar
-                adelante las tareas y proyectos bajo la supervisión de Francisco Canales (profesor del part-time de Sevilla). 
-                          
-            </p>
+                <p>Actualmente tengo <strong id="miEdad">mi_edad</strong> años, soy alumno de The Bridge, que está realizando un part-time de Full Stack.
+                    Aspira a desarrollar webs y apps que puedan ser útiles y fáciles de usar, además de dotarlas de un diseño atractivo e 
+                    intuitivo para los usuarios.
+                    David es de Sevilla, actualmente tiene (edad que actualice) colabora con sus compañeros de The Bridge para poder sacar
+                    adelante las tareas y proyectos bajo la supervisión de Francisco Canales (profesor del part-time de Sevilla).
+                </p>
 
+                <div class='redes'>
+                    <a href="https://www.instagram.com/idavid80/"><img src="https://i.pinimg.com/564x/43/2d/af/432daf4afc8570ba10933bd0fa298984.jpg" height="50px"
+                            alt="instagram"></a>
+                </div>
+        </article>
+        <div class="banner-ejercicios">
+            <div class="menu" id="menu-ejercicios">
+                <button onclick=" myFunctionhtml()" class="boton-menu" id="boton-html">HTML</button>
+                <div id="ejercicios" class="ejercicios-menu">
+                    <a href="#home">Carta</a>
+                    <a
+                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/formulario/formulario-david.html">Formulario</a>
+                    <a
+                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/HTML/gimnasio/gatitos_david.html">Gatitos</a>
+                </div>
             </div>
-        <div class='redes'>
-            <a href="https://www.instagram.com/idavid80/"><img src="imagenes/ig.jpg" height="50px"  alt="instagram"></a>
+            <div class="menu-css" id="menu-ejercicios">
+                <button onclick="myFunctioncss()" class="boton-menu" id="boton-css">CSS</button>
+                <div id="ejercicios-css" class="ejercicios-css">
+                    <a href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/carta/david/carta.html">Carta</a>
+                    <a
+                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/copleros/soluciones/david/copleros_david.html">Copleros</a>
+                    <a
+                        href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/CSS/responsive/responsive_david.html">Responsive</a>
+                </div>
+            </div>
+            <div class="menu-js" id="menu-ejercicios">
+                <button onclick="myFunctionjs()" class="boton-menu" id="boton-js">Javascript</button>
+                <div id="ejercicios-js" class="ejercicios-js">
+                    <a href="/Ramp-Up-Full-Stack-Sevilla-Part-Time/ejercicios/JS/bikram_0/">Bikram_0</a>
+
+                </div>
+            </div>
         </div>
     </main>
 
-    <div w3-include-html="../../footer/footer.html"></div>
-    <script>
-      includeHTML();
-    </script>
+
+
     <foot>
-        <div class='mapa-web'>
-        <a href="http://">Edu</a>
-        <a href="http://">Fran</a>
-        <a href="http://">Paul</a>
-        <a href="http://">Stewart</a>
-        <a href="http://">Tereza</a>
-        <a href="http://">Canales</a>
-        <a href="http://https://www.thebridge.tech/">The Bridge</a>
-    </div>
+        <div w3-include-html="/Ramp-Up-Full-Stack-Sevilla-Part-Time/componentes/footer/footer.html"></div>
 
     </foot>
+    <script>
+        includeHTML();
+    </script>
 </body>
+
+</html>
