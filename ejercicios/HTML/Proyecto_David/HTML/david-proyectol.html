@@ -2,75 +2,13 @@
 <html lang="es">
 
 <link rel="stylesheet" href="styledavid.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Space+Mono&display=swap" rel="stylesheet">
 <script src="/funciones/include.js"></script>
 <script src="/funciones/menu-desplegable.js"></script>
-<script src="/ejercicios/HTML/Proyecto_David/HTML/js-funciones/botones.js"></script>
-<script>
-    function calcularEdad() {
-      // tomar este año como un número
-     
-      var date = new Date();
-      var edad = date.getFullYear()-1980;
-      document.getElementById("miEdad").innerHTML = edad;
-    
-    }
-    </script>
-    <script>
-        function myFunctionhtml() {
-            document.getElementById("ejercicios").classList.toggle("show");
-        }
-    
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.boton-menu')) {
-                var soluciones = document.getElementsByClassName("ejercicios-menu");
-                var i;
-                for (i = 0; i < soluciones.length; i++) {
-                    var abrir_soluciones = soluciones[i];
-                    if (abrir_soluciones.classList.contains('show')) {
-                        abrir_soluciones.classList.remove('show');
-                    }
-                }
-            }
-        }    
-    </script>
-        <script>
-                function myFunctioncss() {
-            document.getElementById("ejercicios-css").classList.toggle("show-css");
-        }
-        
-        window.onclick = function (event) {
-            if (!event.target.matches('.boton-css')) {
-                var soluciones = document.getElementsByClassName("ejercicios-css");
-                var i;
-                for (i = 0; i < soluciones.length; i++) {
-                    var abrir_soluciones = soluciones[i];
-                    if (abrir_soluciones.classList.contains('show-css')) {
-                        abrir_soluciones.classList.remove('show-css');
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <script>
-        function myFunctionjs() {
-    document.getElementById("ejercicios-js").classList.toggle("show-js");
-    }
-    
-    window.onclick = function (event) {
-    if (!event.target.matches('.boton-js')) {
-        var dropdown = document.getElementsByClassName("ejercicios-js");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show-js')) {
-                openDropdown.classList.remove('show-js');
-            }
-        }
-    }
-    }
-    </script>
+<script src="/funciones/david.js"></script>
+
 <title>David - HTML The Bridge</title>
 </head>
 
@@ -82,39 +20,39 @@
     </header>
     <main>
         <h2 class="estudiante">David Domínguez</h2>
-        <article>
+        <article class="curso-david">
             <div class="david">
-                <p>Actualmente tengo <strong id="miEdad">mi_edad</strong> años, soy alumno de The Bridge, que está realizando un part-time de Full Stack.
-                    Aspira a desarrollar webs y apps que puedan ser útiles y fáciles de usar, además de dotarlas de un diseño atractivo e 
-                    intuitivo para los usuarios.
-                    David es de Sevilla, actualmente tiene (edad que actualice) colabora con sus compañeros de The Bridge para poder sacar
-                    adelante las tareas y proyectos bajo la supervisión de Francisco Canales (profesor del part-time de Sevilla).
+                <p>Actualmente tengo <strong id="miEdad"></strong> años, soy alumno de The Bridge, que está
+                    realizando un part-time de Full Stack.
+                    Aspira a desarrollar webs y apps que puedan ser útiles y fáciles de usar, además de dotarlas de un
+                    diseño atractivo intuitivo para los usuarios.
+                    David es de Sevilla, actualmente tiene (edad que actualice) colabora con sus compañeros de The
+                    Bridge para poder sacar adelante las tareas y proyectos bajo la supervisión de Francisco Canales
+                    (profesor del part-time de Sevilla).
                 </p>
-
-                <div class='redes'>
-                    <a href="https://www.instagram.com/idavid80/"><img src="https://i.pinimg.com/564x/43/2d/af/432daf4afc8570ba10933bd0fa298984.jpg" height="50px"
-                            alt="instagram"></a>
-                </div>
         </article>
+        <div class='redes'>
+            <a href="https://www.instagram.com/idavid80/"><img
+                    src="https://i.pinimg.com/564x/43/2d/af/432daf4afc8570ba10933bd0fa298984.jpg" height="50px"
+                    alt="instagram"></a>
+        </div>
+
+
         <div class="banner-ejercicios">
             <div class="menu" id="menu-ejercicios">
                 <button onclick=" myFunctionhtml()" class="boton-menu" id="boton-html">HTML</button>
                 <div id="ejercicios" class="ejercicios-menu">
                     <a href="#home">Carta</a>
-                    <a
-                        href="/ejercicios/HTML/formulario/formulario-david.html">Formulario</a>
-                    <a
-                        href="/ejercicios/HTML/gimnasio/gatitos_david.html">Gatitos</a>
+                    <a href="/ejercicios/HTML/formulario/formulario-david.html">Formulario</a>
+                    <a href="/ejercicios/HTML/gimnasio/gatitos_david.html">Gatitos</a>
                 </div>
             </div>
             <div class="menu-css" id="menu-ejercicios">
                 <button onclick="myFunctioncss()" class="boton-menu" id="boton-css">CSS</button>
                 <div id="ejercicios-css" class="ejercicios-css">
                     <a href="/ejercicios/CSS/carta/david/carta.html">Carta</a>
-                    <a
-                        href="/ejercicios/CSS/copleros/soluciones/david/copleros_david.html">Copleros</a>
-                    <a
-                        href="/ejercicios/CSS/responsive/responsive_david.html">Responsive</a>
+                    <a href="/ejercicios/CSS/copleros/soluciones/david/copleros_david.html">Copleros</a>
+                    <a href="/ejercicios/CSS/responsive/responsive_david.html">Responsive</a>
                 </div>
             </div>
             <div class="menu-js" id="menu-ejercicios">
@@ -125,6 +63,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
 
