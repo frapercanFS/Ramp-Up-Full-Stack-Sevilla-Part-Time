@@ -1,0 +1,150 @@
+body{
+  
+  background-color: #3da07f;
+}
+
+main{
+
+  padding: 2%; 5%; 10%; 5;
+}
+.curso-david {
+
+  display: block;
+}
+
+.david {
+  font-family: 'Space Mono', monospace;
+}
+
+.estudiante {
+  font-family: 'Dancing Script', cursive;
+  font-size: xx-large;
+}
+
+.redes {
+
+  display: flex;
+  justify-content: center;
+  margin: 2% auto;
+}
+
+.redes img {
+
+  border-radius: 25%;
+}
+
+.banner-ejercicios {
+
+  background-color: #3da07f;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+.boton-menu {
+
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  min-width: 150%;
+}
+  
+#menu-ejercicios {
+
+  position: relative;
+  display: inline-block;
+}
+
+#menu-ejercicios a:hover {
+
+  background-color: #ddd;
+}
+
+#menu-css {
+
+  position: relative;
+  display: inline-block;
+}
+
+#menu-css a:hover {
+  background-color: #ddd;
+}
+  
+#menu-js {
+
+  position: relative;
+  display: inline-block;
+}
+
+#menu-js a:hover {background-color: #ddd;}
+  
+  .ejercicios-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.ejercicios-menu a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.ejercicios-css {
+
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ejercicios-css a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.ejercicios-js {
+
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+.ejercicios-js a {
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.menu {
+
+  position: relative;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.show, .show-css, .show-js {
+  
+  display: block;
+}

@@ -8,64 +8,88 @@ body {
     margin: auto;
     display: grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(3, fr);
-    grid-template-rows: repeat(4, fr);
+    grid-template-columns: repeat(4,fr);
+/*     grid-template-rows: repeat(4, fr); */
     border: 1px solid black;
+    grid-template-areas: "header header header header "
+        "content content sidebar sidebar"
+         "content content sidebar sidebar  "
+        "footer footer hero hero";
 
 }
 
 .header {
     background-color: #03A8F4;
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     padding: 0px 15px;
+    grid-area: header;
 }
 
 .hero {
     background-color: #D22B1F;
-    grid-column: 1/ 4;
+    /* grid-column: 1/ 4; */
     padding: 0px 15px;
+    grid-area: hero;
 }
 
 .content {
     background-color: #129A22;
-    grid-column: 1/ 4;
+    /* grid-column: 1/ 4; */
     padding: 0px 15px;
+    grid-area: content;
 }
 
 .sidebar {
     background-color: #6639B6;
-    grid-column: 1/ 4;
+    /* grid-column: 1/ 4; */
     padding: 0px 15px;
+    grid-area: sidebar;
 }
 
 footer {
     background-color: #606060;
-    grid-column: 1/ 4;
+    /* grid-column: 1/ 4; */
     padding: 0px 15px;
+    grid-area: footer;
 }
 
 @media only screen and (min-width: 820px) {
+    .contenedor {
+       grid-template-columns: repeat(4, auto);
+        grid-template-areas:"header header header header"
+        "hero hero hero sidebar"
+        "content content content sidebar "
+        "footer footer footer sidebar"
+
+        
+    }
 
 
-    .content {
+    /*   .content {
         grid-column: 1/3;
     }
-
+*/
     .sidebar {
-        grid-column: 3/4;
-    }
+        max-width: 10rem;
+        /*grid-column: 3/4;*/
+    } 
 
-}
+ }
 
 @media only screen and (min-width: 1024px) {
 
-
-    .content {
+    .contenedor {
+        grid-template-areas:"header header header header"
+        "hero hero hero sidebar"
+        "content content content sidebar "
+        "footer footer footer footer"
+    }
+}
+    /*     .content {
         margin-left: 10%;
     }
 
     .sidebar {
         margin-right: 20%;
-    }
+    } */
 
-}
