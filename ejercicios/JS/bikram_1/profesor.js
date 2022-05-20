@@ -1,4 +1,4 @@
-//https://github.com/TheBridge-FullStackDeveloper/fundamentos-de-programacion-bikram-array-funciones
+/* //https://github.com/TheBridge-FullStackDeveloper/fundamentos-de-programacion-bikram-array-funciones
 
 // 1.- Crear variable de nombre arrayVacio cuyo valor sea un array vacío
 // let arrayVacio = new Array()
@@ -178,32 +178,4 @@ function eliminarDuplicados(lista) {
 
 var listaDuplicados = ["hola", "adios", "adios", "hasta luego"];
 console.log(14, eliminarDuplicados(listaDuplicados));
-
-// 26.- Crear la función multiplicarArray que acepte como argumento un array numérico y devuelva la multiplicación de los números en el array Array: [2, 3, 4] resultado: 24
-
-function multiplicarArray(listaNumeros) {
-  let resultado = 1;
-  for (let numero of listaNumeros) {
-    resultado *= numero;
-  }
-  return resultado;
-}
-
-console.log(multiplicarArray([2, 3, 4]));
-
-// 24.- Crear la función obtenerImpares que acepta como argumento un array de números y devuelva un array con los elementos impares
-
-function obtenerImpares(numeros) {
-  var resultado = [];
-
-  for (let numero of numeros) {
-    if (numero % 2 != 0) {
-      resultado.push(numero);
-    }
-  }
-  return resultado;
-}
-
-numeros = [1, 5, 3, 4, 5, 6];
-console.log(24, obtenerImpares(numeros));
-
+ 
