@@ -49,9 +49,17 @@ body {
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+  .image-replacement {
+    display: flex;
+    max-width: 60px;
+    max-height: 50%;
+    content: url(/recursos/brigde-icon-mobile.png);
   }
 }
 
@@ -59,11 +67,13 @@ body {
   .topnav.responsive {
     position: relative;
   }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
