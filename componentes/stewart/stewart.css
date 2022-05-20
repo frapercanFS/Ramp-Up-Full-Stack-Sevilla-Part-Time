@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5%;
+}
+
+.networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.networks img {
+    max-width: 50px;
+}
+
+audio {
+    margin: 5% auto;
+}
+
+div.name h2 {
+    display: flex;
+    margin-top: -5%;
+}
+
+.projects {
+    border: 1px rgb(222, 181, 255) solid;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+p,
+li {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 25px;
+}

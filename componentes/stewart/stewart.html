@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stewart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Rajdhani&display=swap"
+        rel="stylesheet">
     <title>Mi primer paso</title>
     <script src="/funciones/include.js"></script>
     <script src="/funciones/menu-desplegable.js"></script>
@@ -15,30 +19,30 @@
 
     <header w3-include-html="/componentes/header/header.html"></header>
     <main>
-        <audio controls>
-            <source src="#.ogg" type="audio/ogg">
-            <source src="#.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <h1>
-            Stewart Batallas
-        </h1>
-        <h2>
-            Full Stack Developer Project
-        </h2>
-        <img src="#" id="personal-photo" alt="una foto donde salgo relajado">
+
+        <div class="name">
+            <img src="#" id="personal-photo" alt="una foto donde salgo relajado">
+            <h1>
+                Stewart Batallas
+            </h1>
+            <h2>
+                Full Stack Developer Project
+            </h2>
+        </div>
+
 
         <p>
             Mi nombre es Stewart Batallas. Desde pequeño me ha gustado todo lo relacionado con la informática y soñaba
             con trabajar en empresas como Google o Apple. A día de hoy, me dedico a formarme en The Bridge para hacer
             ese sueño realidad.
         </p>
+
         <h2>Me puedes encontrar en:</h2>
         <div class="networks">
-            <img src="/componentes/recursos/gorjeo.png" alt="twitter">
-            <img src="/componentes/recursos/instagram.png" alt="instagram">
-            <img src="/componentes/recursos/linkedin.png" alt="linkedin">
-            <img src="/componentes/recursos/email.png" alt="email">
+            <img src="/recursos/gorjeo.png" alt="twitter">
+            <img src="/recursos/instagram.png" alt="instagram">
+            <img src="/recursos/linkedin.png" alt="linkedin">
+            <img src="/recursos/email.png" alt="email">
         </div>
 
         <h2>Puedes acceder a mis ultimos trabajos justo <a href="#">aqui</a></h2>
@@ -69,6 +73,12 @@
             <a href="#">Formulario</a>
             <a href="#">Gatitos lindos </a>
         </div>
+
+        <audio controls autoplay>
+            <source src="#.ogg" type="audio/ogg">
+            <source src="#.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </main>
     <footer w3-include-html="/componentes/footer/footer.html"></footer>
     <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos creados por
