@@ -45,6 +45,19 @@ body {
   display: none;
 }
 
+.grupo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+div.grupo h6 {
+  margin-top: -10px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
