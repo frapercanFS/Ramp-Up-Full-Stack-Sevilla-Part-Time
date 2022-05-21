@@ -1,13 +1,11 @@
 * {
     box-sizing: border-box;
-    
-
 }
 h1{ font-size: 3em}
 h2{ font-size: 2.5em}
 h3{font-size: 1.5em}
 p{ font-size: 1em;}
-ul{list-style:none ;}
+ul{list-style-type: style block; ;}
 
 
 body {
@@ -168,10 +166,18 @@ margin:0;
   .mySlides {
     display: none;
   }
-
-  .mySlides:first-child {
-      display:block ;
-  }
+#primer-slide {
+    display: block;
+}
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
   
   /* Next & previous buttons */
   .prev, .next {
@@ -231,8 +237,10 @@ margin:0;
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
   
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
+ 
