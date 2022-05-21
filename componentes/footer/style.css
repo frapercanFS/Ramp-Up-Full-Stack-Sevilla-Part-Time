@@ -2,7 +2,7 @@ footer {
   background-color: rgba(31, 31, 31, 0.3);
   backdrop-filter: grayscale() blur(10px);
   font-family: Colibri;
-  padding: 1% 5% 2%; 5%;
+  padding: 1% 5% 2% 5%;
 
 }
 
@@ -50,7 +50,7 @@ h2 {
 .copyright {
   display: flex;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+
 }
 
 #horario {
