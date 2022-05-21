@@ -3,20 +3,30 @@ footer {
   backdrop-filter: grayscale() blur(10px);
   font-family: Colibri;
   padding: 1%; 5%; 2%; 5%;
+  
 }
-
-.legal-lista {
+.contenedor {
   display: flex;
-  justify-content: space-around;
-}
 
-.informacion-lista {
+}
+.legal {
   display: flex;
-  justify-content: space-evenly;
+  width: 30%;
 }
-
+.informacion{
+  display: flex;
+  width: 40%;
+}
+.quienes-somos{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+p{
+  margin-top: 0;
+  margin-left: 10px;
+}
 .copyright {
   display: flex;
-  justify-content:center;
-  text-align: center;
+  
 }
