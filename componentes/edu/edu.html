@@ -8,6 +8,8 @@
     <title>Document</title>
     <link href="style-edu.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="script.js"></script>
+    <script src="/funciones/include.js"></script>
+    <script src="/funciones/menu-desplegable.js"></script>
 </head>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,21 +17,11 @@
 
 
 <header>
-    <nav class="topnav" id="myTopnav">
-        <div class="logo"> <a href="#inicio" class="active">
-                <img src="https://c.smartrecruiters.com/sr-company-logo-prod-dc5/603c9a6abe9ff14555e2c18c/huge?r=s3-eu-central-1&_1614584680812"
-                    alt="the bridge aceleradora digital">
-            </a></div>
-        <div class="menu">
-            <a href="#noticias">Paul</a>
-            <a href="#contactar">Fran</a><a href="#quienes-somos">Edu</a><a href="#contactar">Fran</a>
-            <a href="/componentes/david/david-proyectol.html">David</a><a href="#quienes-somos">Canales</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        </div>
-    </nav>
-</header>
+
+    <div w3-include-html="/componentes/header/header.html"></div>
 
 </header>
+
 
 <button onclick="document.location='C:\componentes\header\header.html'">Volver</button>
 
@@ -39,19 +31,25 @@
 
 
 <body onload="inicio();">
+
     <br> <br> <br>
     <div class="principal">
         <img class="izquierda" src=\recursos\foto-edu.jpeg>
-        <p class="presentacion">Mi nombre es Eduardo Aguilar, tengo 26 años y soy estudiante del Bootcamp Fullstack en
+        <p class="presentacion">Mi nombre es Eduardo Aguilar, tengo 26 años y soy estudiante del Bootcamp Fullstack
+            en
             The bridge.<br>
-            Esta página es para el proyecto final del RampUp del Bootcamp en la que hacemos una demostración de lo que
+            Esta página es para el proyecto final del RampUp del Bootcamp en la que hacemos una demostración de lo
+            que
             hemos aprendido sobre HTML, CSS Y Javascript <br>
             Durante el RampUp hemos aprendido principalmente 3 lenguajes diferente <br>
-            También hemos aprendido a usar GitHub, que es una herramienta de control de versiones muy útil para trabajar
+            También hemos aprendido a usar GitHub, que es una herramienta de control de versiones muy útil para
+            trabajar
             en equipo y programar de manera organizada
 
 
         </p>
+
+
 
     </div>
     <div class="contador" id="cuenta"></div>
@@ -76,40 +74,12 @@
 
 </body>
 
-<footer>
-    <div class="quienes-somos">
-        <h1>¿Quienes somos?</h1>
-        <p>Somos un grupo formado por 7 personas cuya principal motivacion es aprender a programar. Partimos desde
-            nociones
-            basicas como HTML y CSS hasta poder trabajar con lenguajes más complejos
-        </p>
-    </div>
-
-    <div class="Legal">
-        <ul class="legal-lista">
-            <li>Aviso legal</li>
-            <li>Politica de cookies</li>
-            <li>Politica de privacidad</li>
-            <li>FAQ: Terminos y condiciones</li>
-        </ul>
-    </div>
-
-    <div class="informacion">
-        <ul class="informacion-lista">
-            <li id="lugar"><a
-                    href="https://www.google.com/maps/place/Escuela+de+Negocios+C%C3%A1mara+de+Comercio+de+Sevilla/@37.3755128,-5.9807199,15z/data=!4m5!3m4!1s0x0:0xdb1cf121014ac6a5!8m2!3d37.3755128!4d-5.9807199"
-                    target="_blank" alt="Ubicacion EUSA"> &#128205; Escuela de Negocios Cámara de Comercio de Sevilla,
-                    AULA 31A</li></a>
-            <li id="horario"> &#8986; M-J-V: 18:30-21:30 h. / S: 9:00-14:00 h.</li>
-        </ul>
-    </div>
-
-    <p id="copyright" align="center">Copyright © 2022. Todos los derechos reservados.</p>
-
-</footer>
+    <div w3-include-html="/componentes/footer/footer.html"></div>
 
 
-
+<script>
+    includeHTML();
+</script>
 
 
 
