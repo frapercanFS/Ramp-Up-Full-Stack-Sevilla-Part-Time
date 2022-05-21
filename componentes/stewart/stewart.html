@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.flaticon.es/iconos-gratis/" title="iconos">
     <link rel="stylesheet" href="stewart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,7 @@
     <title>Mi primer paso</title>
     <script src="/funciones/include.js"></script>
     <script src="/funciones/menu-desplegable.js"></script>
+    <script src="/componentes/stewart/stewart.js"></script>
 </head>
 
 <body>
@@ -21,14 +23,15 @@
     <main>
 
         <div class="name">
-            <img src="#" id="personal-photo" alt="una foto donde salgo relajado">
             <h1>
                 Stewart Batallas
             </h1>
-            <h2>
-                Full Stack Developer Project
-            </h2>
+            <img src="/recursos/stewart.jpg" alt="De tranqui" id="personal-photo">
         </div>
+
+        <h2 class="full-stack">
+            Full Stack Developer
+        </h2>
 
 
         <p>
@@ -37,15 +40,29 @@
             ese sueño realidad.
         </p>
 
-        <h2>Me puedes encontrar en:</h2>
+        <h2 class="substitule">Me puedes encontrar en:</h2>
         <div class="networks">
-            <img src="/recursos/gorjeo.png" alt="twitter">
-            <img src="/recursos/instagram.png" alt="instagram">
-            <img src="/recursos/linkedin.png" alt="linkedin">
-            <img src="/recursos/email.png" alt="email">
+            <div class="social-networks" onclick="twitter()">
+                <img src="/recursos/gorjeo.png" alt="twitter">
+                <p>twitter.com/ulyssbat</p>
+            </div>
+
+            <div class="social-networks" onclick="instagram()">
+                <img src="/recursos/instagram.png" alt="instagram">
+                <p>instagram.com/stewartbatallas</p>
+            </div>
+
+            <div class="social-networks" id="email" onclick="sendEmail()">
+                <img src="/recursos/email.png" alt="email">
+                <p>stewartbatallasminda@gmail.com</p>
+            </div>
         </div>
 
-        <h2>Puedes acceder a mis ultimos trabajos justo <a href="#">aqui</a></h2>
+        <div class="works">
+            <h2 class="substitule">Puedes acceder a mis ultimos trabajos justo <button type="button"
+                    onclick="mostrar()">Aqui</button></h2>
+
+        </div>
 
         <div class="skills">
             <h2>
@@ -67,25 +84,30 @@
             </ol>
         </div>
 
-        <div class="projects">
-            <a href="#">Carta para los reyes magos</a>
-            <a href="#">Los copleros 2022</a>
-            <a href="#">Formulario</a>
-            <a href="#">Gatitos lindos </a>
+        <div class="projects" id="projects">
+            <a href="/ejercicios/CSS/carta/stw/carta.html" target="_blank">Carta para los reyes magos</a>
+            <a href="/ejercicios/CSS/copleros/soluciones/stw/copleros-stw.html" target="_blank">Los copleros 2022</a>
+            <a href="/ejercicios/HTML/formulario/tercera-edad-stw.html" target="_blank">Formulario</a>
+            <a href="/ejercicios/HTML/gimnasio/gatitosb.html" target="_blank">Gatitos lindos </a>
+            <a href="/ejercicios/CSS/responsive/stw/responsive.html" target="_blank">Página responsive</a>
+            <button type="button" onclick="ocultar()">Ocultar</button>
+
         </div>
 
         <audio controls autoplay>
-            <source src="#.ogg" type="audio/ogg">
-            <source src="#.mp3" type="audio/mpeg">
+            <source src="/recursos/bensound-creativeminds.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </main>
     <footer w3-include-html="/componentes/footer/footer.html"></footer>
-    <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos creados por
-        Freepik - Flaticon</a>
     <script>
         includeHTML();
     </script>
+
+    <script>
+        ocultar();
+    </script>
+
 </body>
 
 </html>

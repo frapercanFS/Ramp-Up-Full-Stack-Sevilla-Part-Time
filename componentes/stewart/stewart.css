@@ -1,13 +1,22 @@
 main {
     display: flex;
     flex-direction: column;
-    margin: auto 5%;
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    padding: auto 5px;
 }
 
-.networks {
+.social-networks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-bottom: 1px rgb(213, 213, 213) solid;
+}
+
+div.networks p {
+    display: flex;
+    margin: auto 10px;
 }
 
 div.networks img {
@@ -18,19 +27,39 @@ audio {
     margin: 5% auto;
 }
 
-div.name h2 {
+#personal-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
     display: flex;
-    margin-top: -5%;
+    margin-top: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.full-stack {
+    display: flex;
+    margin-top: -30px;
 }
 
 .projects {
-    border: 1px rgb(222, 181, 255) solid;
-    height: 200px;
+    border: 1px rgb(213, 213, 213) solid;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: large;
+    font-size: 20px;
+}
+
+.projects a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px rgb(213, 213, 213) solid;
+
 }
 
 h1,
@@ -42,5 +71,48 @@ h3 {
 p,
 li {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+div.social-networks:hover,
+.projects a:hover {
+    cursor: pointer;
+    box-shadow: 5px 0px 20px rgb(155, 155, 155);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+@media screen and (min-width:768px) {
+    #personal-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .name {
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .full-stack {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.name h1 {
+        display: flex;
+    }
+
+    .networks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .substitule {
+        margin: 50px 3px;
+    }
 }
