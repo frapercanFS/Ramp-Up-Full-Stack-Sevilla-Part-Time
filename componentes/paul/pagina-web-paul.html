@@ -12,7 +12,11 @@
     <script src="/funciones/menu-desplegable.js"></script>
 </head>
 
+
 <body>
+    
+    <div w3-include-html="/componentes/header/header.html"></div>
+
     <div class="contenedor">
     </div>
     <section id="hero">
@@ -151,6 +155,8 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+
+  <div w3-include-html="/componentes/footer/footer.html"></div>
   <script>
       showSlides();
       currentSlide();
