@@ -2,8 +2,21 @@ footer {
   background-color: rgba(31, 31, 31, 0.3);
   backdrop-filter: grayscale() blur(10px);
   font-family: Colibri;
+  padding: 1%; 5%; 2%; 5%;
 }
 
-footer li {
-  background-color: rgb(213, 218, 223);
+.legal-lista {
+  display: flex;
+  justify-content: space-around;
+}
+
+.informacion-lista {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyright {
+  display: flex;
+  justify-content:center;
+  text-align: center;
 }

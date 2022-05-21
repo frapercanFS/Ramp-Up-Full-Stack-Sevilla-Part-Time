@@ -237,4 +237,3 @@ for(i=0; i<10; i++) {
     else {sumaImpares+=i;i++;}
 }
 console.log(sumaImpares)
-
