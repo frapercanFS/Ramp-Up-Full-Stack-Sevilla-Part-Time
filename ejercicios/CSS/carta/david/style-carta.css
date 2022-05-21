@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    }
+
+ol {
+    line-height: 1.6;
+
+    }
+
+main h3 {
+    font-family: 'Square Peg', cursive;
+    font-size: xx-large;
+    text-align: left;
+    margin-left: 400px;
+}
+.lista {
+    border-style: solid;
+    border-radius: 15px;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    
+}
+p .intro {
+    font-style: italic;
+}
+
+footer {
+    text-align: right;
+    font-family: 'Water Brush', cursive;
+    margin-right: 25%;
+}
+footer h3 {
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 0 auto;
+
+}

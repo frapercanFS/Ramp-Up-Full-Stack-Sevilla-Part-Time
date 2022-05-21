@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario-fran.css">
+    <title>Los ladronzuelos de bicicletas</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset id="vertical">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora">
+            <label for="precio">Precio</label>
+            <input type="range" id="precio" name="precio" value="100" min="1" max="6000"
+                oninput="this.nextElementSibling.value = this.value">
+            <output>100</output>
+            <label for="bicis">Tipo Bicicleta</label>
+            <select name="bicis" id="bicis" value="0">
+                <optgroup label="Paseo">
+                    <option value="Señorial" name="señorial">Señorial</option>
+                    <option value="Anti-plebeyos" name="Anti-plebeyos">Anti-plebeyos</option>
+                    <option value="PorEncimaDelHombro" name="PorEncimaDelHombro">PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="Gamusinos" name="Gamusinos">Gamusinos</option>
+                    <option value="Hueleflores premium" name="Hueleflores premium">Hueleflores premium</option>
+                    <option value="Fangolover" name="Fangolover">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="Metroymedio" name="Metroymedio">Metroymedio</option>
+                    <option value="3tarde" name="3tarde">3 de la tarde. Fluorescente edition</option>
+                    <option value="Grupitors" name="Grupitors">Grupitors</option>
+                </optgroup>
+
+                <input type="checkbox" id="Ruedines" name="Ruedines" value="Ruedines">
+                <label for="Ruedines"> Ruedines</label>
+                <input type="checkbox" id="Pegatinas" name="Pegatinas" value="Pegatinas">
+                <label for="Pegatinas"> Pegatinas</label>
+                <input type="checkbox" id="Cestita" name="Cestita" value="Cestita">
+                <label for="Cestita"> Cestita</label>
+                <input type="checkbox" id="Bomba" name="Bomba" value="Bomba">
+                <label for="Bomba"> Bomba de aire</label>
+                <input type="checkbox" id="Timbre" name="Timbre" value="Timbre">
+                <label for="Timbre"> Timbre</label>
+                <input type="checkbox" id="Foco" name="Foco" value="Foco">
+                <label for="Foco"> Foco</label>
+                
+
+                <label for="marca">Elige marca de bicicleta:</label>
+                <input list="browsers" name="marca" id="marca">
+                <datalist id="browsers">
+                    <option value="Specialized">
+                    <option value="Trek">
+                    <option value="Merida">
+                    <option value="Scott">
+                    <option value="Giant">
+                    <option value="Cube">
+                    <option value="Lapierre">
+                    <option value="Orbea">
+                    <option value="Cannondale">
+                    <option value="BMC">
+                    <option value="Canyon">
+                    <option value="Look">
+                    <option value="Protek">
+                    <option value="Megamo">
+                    <option value="Pinarello">
+                    <option value="Bianci">
+                    <option value="BH">
+                    <option value="Factor">
+                    <option value="Ghost">
+                    <option value="Cervelo">
+                    <option value="Argon">
+
+
+
+                </datalist>
+                <input type="submit" name="Enviar" id="Enviar">
+                <input type="reset" name="Reset" id="Reset">
+
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

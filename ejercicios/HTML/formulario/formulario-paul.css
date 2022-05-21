@@ -1,0 +1,20 @@
+fieldset {
+    background-color: rgba(70, 70, 224, 0.568);
+}
+label {
+    display: block;
+    
+}
+
+form {
+    text-align: center;
+}
+
+input:hover  {
+    background-color: black;
+    color:white;
+}
+
+#titulo {
+    color: rgb(136, 63, 3);
+}

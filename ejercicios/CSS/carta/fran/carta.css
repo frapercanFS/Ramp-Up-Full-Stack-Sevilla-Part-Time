@@ -1,0 +1,42 @@
+.saludo {
+    background-color: rgb(151, 62, 202);
+    color: rgb(25, 5, 71);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1em;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.principal {
+    background-color: rgb(113, 113, 238);
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.imagenes1 img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.imagenes2 img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgb(90, 2, 2);
+}
+
+.imagenes1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.despedida {
+    font-size: 40px;
+}
+.destinatario {
+    display: block;
+    float: right;
+    font-size: 25px;
+}

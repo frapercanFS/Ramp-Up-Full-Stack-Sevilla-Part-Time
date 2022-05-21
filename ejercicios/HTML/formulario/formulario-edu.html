@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <h2>Los ladronzuelos de bicicleta</h2>
+        <label for="start">Fecha:</label>
+
+        <input type="date" id="start" name="trip-start" value="2022-04-23" min="2022-04-23" max="2027-04-23">
+
+        <br><label for="hora">Hora:</label>
+        <form action="https://www.anerbarrena.com/demos/2014/002-time-input-html5.php" name="formulario">
+            <input type="time" id="hora" name="hora" value="11:45:00" max="22:30:00" min="10:00:00" step="1">
+            <br>
+            <label for="precio">Precio:</label>
+            <label for="muestrario">Color:</label>
+            <input type="color" value="#ff0000" id="muestrario">
+            <br></br>
+            Color de la bicicleta:<input type="text" size="15" maxlength="30" value="" name="nombre"
+                autofocus="autofocus">
+            <br></br>
+            <p>
+                Tipo de bicicleta:
+
+                <select>
+
+                    <optgroup label="Paseo">
+
+                        <option>Señorial</option>
+
+                        <option>Anti-plebeyos</option>
+
+                        <option>PorEncimaDelHombro</option>
+
+                    </optgroup>
+
+                    <optgroup label="Montaña">
+
+                        <option>Gamusinos</option>
+                        <option>Hueleflores premium</option>
+                        <option>Fango lover</option>
+
+                    </optgroup>
+                    <optgroup label="Carreras">
+
+                        <option>Metroymedio</option>
+
+                        <option>3 de la tarde. Fluorescente edition</option>
+                        <option>Grupitors</option>
+
+                    </optgroup>
+
+                </select>
+
+            </p>
+            Accesorios:
+            <label><input type="checkbox" id="cbox1" value="first_checkbox"> Ruedines</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Pegatinas</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Cestita</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Bomba de aíre</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Timbre</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Foco</label>
+            <br></br>
+            ¿Qué marca era?
+            <select name="Marca">
+                <option>specialized</option>
+
+                <option>trek</option>
+
+                <option>merida</option>
+
+                <option>scott</option>
+
+                <option>giant</option>
+
+                <option>cube</option>
+
+                <option>lapierra</option>
+
+                <option>orbea</option>
+
+                <option>cannondale</option>
+
+                <option>bmc</option>
+
+                <option>canyon</option>
+
+                <option>look</option>
+
+                <option>protek</option>
+
+                <option>megamo</option>
+
+                <option>pinarello</option>
+
+                <option>bianchi</option>
+
+                <option>bh</option>
+
+                <option>factor</option>
+
+                <option>ghost</option>
+
+                <option>cervélo</option>
+
+                <option>argon</option>
+
+            </select>
+            <br>
+            <input type="reset" value="Limpiar" />
+            <input type="submit" value="Enviar" />
+
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet" />
+  <script src="/funciones/include.js"></script>
+  <script src="/funciones/menu-desplegable.js"></script>
+
+  <title>Página principal del proyecto de clase</title>
+</head>
+
+<body>
+  <div w3-include-html="/componentes/header/header.html"></div>
+  <main>
+    <div class="grupo">
+      <img id='foto-grupo' src="/recursos/foto-grupo.jpeg" alt="foto del equipo">
+      <h2>Foto del equipo</h2>
+      <h6>de izq a dcha: Paul, David, Edu, Canales, Stewart y Fran</h6>
+    </div>
+    <h1>¿Qué hacemos?</h1>
+    <div>
+      Somos alumnos y un profesor que estamos aprendiendo las bases de
+      desarrollo web con HTML, CSS y JavaScript, y proximamente nos
+      adentraremos en el perfil <b> MERN </b>
+    </div>
+    <h2>¿Qué es el perfil MERN?</h2>
+    <p>
+      MERN son las siglas de MongoDB, Express, React, Node, por las cuatro
+      tecnologías clave que componen el perfil.
+
+    <ul>
+      <li>MongoDB - base de datos de documentos</li>
+      <li>Express(.js) - framework web Node.js</li>
+      <li>React(.js) - un framework JavaScript del lado del cliente</li>
+      <li>Node(.js) - el principal servidor web de JavaScript</li>
+    </ul>
+    </p>
+
+    <h1>Repositorio Del proyecto</h1>
+    <a href="https://github.com/frapercanFS/Ramp-Up-Full-Stack-Sevilla-Part-Time"> <img id="git"
+        src="/recursos/github.png" alt=""></a>
+    <h1>¿Donde Estamos?</h1>
+    <iframe id="mapa"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25362.003255281885!2d-6.0278289208984575!3d37.38391000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126e9dd1459faf%3A0x2784c50bed8eda20!2sC%C3%A1mara%20de%20Comercio%20de%20Sevilla!5e0!3m2!1sen!2ses!4v1653125346423!5m2!1sen!2ses"
+      style="border: 20px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+
+  <div w3-include-html="/componentes/footer/footer.html"></div>
+
+  <script>
+    includeHTML();
+  </script>
+</body>
+
+</html>
