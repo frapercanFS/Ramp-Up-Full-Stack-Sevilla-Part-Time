@@ -6,12 +6,8 @@ function validateForm(elemento) {
   } 
 
 
-document.querySelector('form[name="star-trek"]').addEventListener('submit', (event) => {
+document.querySelector('form[name="dnd"]').addEventListener('submit', (event) => {
     event.preventDefault()
-
-    // console.log('evento: ',event)
-    // console.log('target: ',event.target)
-    // console.log('submitter: ',event.submitter)
     console.log('elementos', event.target.elements[2].value)
 
     console.log('Es "trekkie"? ', event.target.elements.trekkie.checked)
@@ -19,8 +15,6 @@ document.querySelector('form[name="star-trek"]').addEventListener('submit', (eve
     console.log('El número de serie de la nave Enterprise es: ', event.target.elements.enterprise.value)
 
     validateForm(event.target.elements[2].value)
-
-
 
 
 })
