@@ -1,6 +1,5 @@
 window.onload = aplicarFunciones;
 
-
 const colors = [
   "03045e",
   "023e8a",
@@ -24,6 +23,7 @@ const getRandom = (array) => {
 
   return array[indiceAleatorio];
 };
+
 
 
 function aplicarFunciones() {
@@ -54,7 +54,11 @@ function cambiarImagenOnClick() {
 }
 
 function cambiarImagen(e) {
+
   e.target.src = getRandom(gifs)
+
+  e.target.src = "/ejercicios/JS/varita-magica/enunciado/assets/magic-4.gif";
+
 }
 
 function cambiarEstiloParrafosOnClick() {
@@ -105,6 +109,7 @@ function cambiarImagenPorGif(e) {
 }
 
 function cambiarGifPorImagen(e, imagenAnterior) {
+
   e.target.src = imagenAnterior;
 }
 
@@ -119,4 +124,9 @@ function cambiarBackgroundColorAleatorio(e) {
   console.log(getRandom(colors));
 
   e.target.style.backgroundColor = "#" + getRandom(colors);
+
+  console.log(imagenAnterior);
+
+  e.target.src = imagenAnterior;
+
 }
