@@ -1,11 +1,38 @@
 window.onload = aplicarFunciones;
 
+const colors = [
+  "03045e",
+  "023e8a",
+  "0077b6",
+  "0096c7",
+  "00b4d8",
+  "48cae4",
+  "90e0ef",
+  "ade8f4",
+  "caf0f8",
+];
+const gifs = [
+  "/ejercicios/JS/varita-magica/enunciado/assets/magic-1.gif",
+  "/ejercicios/JS/varita-magica/enunciado/assets/magic-2.gif",
+  "/ejercicios/JS/varita-magica/enunciado/assets/magic-3.gif",
+  "/ejercicios/JS/varita-magica/enunciado/assets/magic-4.gif",
+];
+
+const getRandom = (array) => {
+  let indiceAleatorio = Math.floor(Math.random() * array.length);
+
+  return array[indiceAleatorio];
+};
+
+
+
 function aplicarFunciones() {
   denegarElementosOnClick();
   cambiarImagenOnClick();
   cambiarEstiloParrafosOnClick();
   cambiarEstiloArticleSectionOnClick();
   cambiarImagenOnMouseOver();
+  cambiarBackgroundColorOnClick();
 }
 
 function denegarElementosOnClick() {
@@ -27,7 +54,11 @@ function cambiarImagenOnClick() {
 }
 
 function cambiarImagen(e) {
+
+  e.target.src = getRandom(gifs)
+
   e.target.src = "/ejercicios/JS/varita-magica/enunciado/assets/magic-4.gif";
+
 }
 
 function cambiarEstiloParrafosOnClick() {
@@ -78,7 +109,24 @@ function cambiarImagenPorGif(e) {
 }
 
 function cambiarGifPorImagen(e, imagenAnterior) {
+
+  e.target.src = imagenAnterior;
+}
+
+
+function cambiarBackgroundColorOnClick() {
+  let body = document.querySelector("body");
+  body.addEventListener("click", cambiarBackgroundColorAleatorio);
+}
+
+function cambiarBackgroundColorAleatorio(e) {
+  console.log("#" + getRandom(colors));
+  console.log(getRandom(colors));
+
+  e.target.style.backgroundColor = "#" + getRandom(colors);
+
   console.log(imagenAnterior);
 
   e.target.src = imagenAnterior;
+
 }

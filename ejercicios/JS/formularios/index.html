@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HTML5 Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="TheBridge">
+    <meta name="description" content="Plantilla simple HTML5">
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <h1>Validación de formularios</h1>
+    <form name="star-trek">
+        <fieldset>
+            <legend>Sobre... Star Trek</legend>
+            <label for="trekkie-field">He visto alguna película de Star Trek:</label>
+            <input id="trekkie-field" type="checkbox" name="trekkie" value="esTrekkie">
+
+            <br>
+
+            <label for="academy-test-field">¿Cómo se llama la prueba de ingreso a la academia estelar?</label>
+            <input id="academy-test-field" type="text" name="academy-test">
+
+            <br>
+
+            <label for="enterprise-field">Completa el nombre de serie de la nave Enterprise</label>
+            <span>NCC-</span><input id="enterprise-field" type="number" name="enterprise" >
+            
+            <br>
+
+            <button type="submit">Comprobar datos</button>
+        </fieldset>
+    </form>
+
+    <form name="dnd">
+        <fieldset>
+          <legend>En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?</legend>
+          <label for="bard-field">Un bardo</label>
+          <input id="bard-field" type="radio" name="elminster" value="bardo">
+    
+          <label for="merchant-field">Un mercader</label>
+          <input id="merchant-field" type="radio" name="elminster" value="mercader">
+    
+          <label for="sorcerer-field">Un mago</label>
+          <input id="sorcerer-field" type="radio" name="elminster" value="mago">
+    
+          <label for="sailor-field">Un marinero</label>
+          <input id="sailor-field" type="radio" name="elminster" value="marinero">
+
+          <br>
+          <button type="submit"">Comprobar datos</button>
+        </fieldset>
+    </form>
+    <form name="esdla">
+        <fieldset>
+          <legend>En el mundo de El Señor de los Anillos, ¿A qué raza pertenecía Gandalf?</legend>
+          <label for="human-field">Un humano</label>
+          <input id="human-field" type="radio" name="gandalf" value="humano">
+    
+          <label for="troll-field">Un troll</label>
+          <input id="troll-field" type="radio" name="gandalf" value="troll">
+    
+          <label for="maiar-field">Un maiar</label>
+          <input id="maiar-field" type="radio" name="gandalf" value="maiar">
+    
+          <label for="elf-field">Un elfo</label>
+          <input id="elf-field" type="radio" name="gandalf" value="elfo">
+
+          <br>
+          <button type="submit">Comprobar datos</button>
+        </fieldset>
+    </form>
+</body>
+</html>

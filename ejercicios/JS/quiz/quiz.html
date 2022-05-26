@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <form name="dnd">
+      <fieldset>
+        <legend>
+          En el mundo de Dragones y Mazmorras, ¿Quién es Elminster?
+        </legend>
+        <label for="bard-field">Un bardo</label>
+        <input id="bard-field" type="radio" name="elminster" value="bardo" />
+
+        <label for="merchant-field">Un mercader</label>
+        <input
+          id="merchant-field"
+          type="radio"
+          name="elminster"
+          value="mercader"
+        />
+
+        <label for="sorcerer-field">Un mago</label>
+        <input id="sorcerer-field" type="radio" name="elminster" value="mago" />
+
+        <label for="sailor-field">Un marinero</label>
+        <input
+          id="sailor-field"
+          type="radio"
+          name="elminster"
+          value="marinero"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Pregunta absurda</legend>
+        <label for="one-field">one</label>
+        <input id="one-field" type="radio" name="absurda" value="one" />
+
+        <label for="two-field">two</label>
+        <input id="two-field" type="radio" name="absurda" value="two" />
+
+        <label for="three-field">three</label>
+        <input id="three-field" type="radio" name="absurda" value="three" />
+
+        <label for="four-field">four</label>
+        <input id="four-field" type="radio" name="absurda" value="four" />
+      </fieldset>
+
+      <button type="submit">Comprobar datos</button>
+    </form>
+  </body>
+</html>
