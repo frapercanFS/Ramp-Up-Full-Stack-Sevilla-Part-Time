@@ -1,77 +1,4 @@
-const preguntas = [
-  {
-    titulo: "¿A quién ha doblado más veces Constantino Romero?",
-    respuestas: [
-      {
-        label: "Clint Eastwood",
-        id: "clint-eastwood",
-        name: "actor",
-        value: "clint-eastwood",
-      },
-      {
-        label: "James Earl",
-        id: "james-earl",
-        name: "actor",
-        value: "james-earl",
-      },
-      {
-        label: "Roger Moore",
-        id: "roger-moore",
-        name: "actor",
-        value: "roger-moore",
-      },
-      {
-        label: "William Shatner",
-        id: "william-shatner",
-        name: "actor",
-        value: "william-shatner",
-      },
-      {
-        label: "Arnold Schwarzenegger",
-        id: "arnold-schwarzenegger",
-        name: "actor",
-        value: "arnold-schwarzenegger",
-      },
-    ],
-    solucion: "clint-eastwood",
-  },
-  {
-    titulo: "Titulo",
-    respuestas: [
-      {
-        label: "etiqueta1",
-        id: "id1",
-        name: "pregunta2",
-        value: "value1",
-      },
-      {
-        label: "label2",
-        id: "id2",
-        name: "pregunta2",
-        value: "value2",
-      },
-      {
-        label: "label3",
-        id: "id3",
-        name: "pregunta2",
-        value: "value3",
-      },
-      {
-        label: "label4",
-        id: "id4",
-        name: "pregunta2",
-        value: "value4",
-      },
-      {
-        label: "label5",
-        id: "id5",
-        name: "pregunta2",
-        value: "value5",
-      },
-    ],
-    solucion: "value5",
-  },
-];
+import respuestas from "./preguntas_trivial"
 
 class Pregunta {
   constructor(titulo, respuestas, solucion) {
@@ -136,7 +63,7 @@ function imprimeInput(respuesta) {
 }
 
 function imprimeBotonSubmit() {
-  return '<button type="button" onclick="comprobar(pregunta)">Comprobar</button> ';
+  return '<button type="submit">Comprobar</button> ';
 }
 
 function comprobar(pregunta) {
@@ -152,6 +79,25 @@ htmlNuevo = "";
 for (let pregunta of listaPreguntas) {
   htmlNuevo += imprimePregunta(pregunta);
 }
-console.log(listaPreguntas);
+htmlNuevo += imprimeBotonSubmit();
 
 document.getElementById("dinamico").innerHTML = htmlNuevo;
+
+document
+  .querySelector('form[id="dinamico"]')
+  .addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    // True si todas están bien, Si alguna erronea False
+    let resultado = true;
+    for (let pregunta of listaPreguntas) {
+      for (let input of document.getElementsByName(
+        pregunta.respuestas[0].name
+      )) {
+        if (input.checked == true && input.value != pregunta.solucion) {
+          resultado = false;
+        }
+      }
+    }
+    alert(resultado);
+  });
