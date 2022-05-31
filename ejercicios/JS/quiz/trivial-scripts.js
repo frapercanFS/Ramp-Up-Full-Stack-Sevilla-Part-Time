@@ -1,9 +1,10 @@
+
 const preguntas = [{
     pregunta: "En el mundo de Mazmorras y Dragones ¿Quién es Elminster?",
     opciones: ["Un Bardo", "Un Mercader", "Un Mago", "Un Marinero"],
     respuesta: "Un Mago"
 },
-/* {
+ /*{
     pregunta: "¿Quién de estos personajes no es un Hobitt?",
     opciones: ["Frodo", "Sam", "Golum", "Bardo"],
     respuesta: "Bardo"
@@ -63,31 +64,27 @@ function imprimeTodasLasRespuestas(pregunta) {
         let opcionElegida = e.target.innerText;
         let score = 0;
         if (pregunta.comprobarOpcion(opcionElegida)) {
+            e.target.style.backgroundColor = "green";
             score++
         }
+        else {
+            e.target.style.backgroundColor = "red";
+        }
+        SiguientePregunta()
         console.log(score)
         console.log(pregunta.comprobarOpcion(opcionElegida))
-
         console.log(opcionElegida)
     }
 }
+function SiguientePregunta(){
+    const sigueinteBoton = document.createElement("button");
+sigueinteBoton.innerText = "Siguiente Pregunta";
+sigueinteBoton.className = 'button';
+document.getElementById("siguiente-pregunta").appendChild(sigueinteBoton);
+sigueinteBoton.addEventListener("click", reemplazarPreguntas);
 
+}
 
-/* function comprobarOpcion(eleccion) {
-    let solucion = Pregunta.respuesta;
-    console.log(solucion)
-    if (eleccion == solucion) {
-        console.log(1);
-    }
-    else {
-        console.log(0);
-    }
-} */
+function reemplazarPreguntas(){
 
-/* }
-function opcionSeleccionada(e) {
-    
-
-} */
-
-
+}

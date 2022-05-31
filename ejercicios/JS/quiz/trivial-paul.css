@@ -36,3 +36,12 @@ cursor: pointer;
     background-color: #f1849d;
     transform: scale(1.1);
 }
+
+#siguiente-pregunta .button{
+    background-color: rgb(76, 135, 212);
+} 
+#siguiente-pregunta .button:hover{
+    background-color: rgb(117, 172, 243);
+    transform: scale(1.1);
+
+} 
