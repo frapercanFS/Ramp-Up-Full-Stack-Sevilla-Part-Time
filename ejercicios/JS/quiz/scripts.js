@@ -1,18 +1,3 @@
-// window.onload = aplicarFunciones;
-
-// function aplicarFunciones(){
-//     deshabilitarBotonOnClick();
-
-// }
-
-// function deshabilitarBotonOnClick(){
-//     let botones = document.getElementsByTagName("button");
-//     for(let boton of botones){
-//         boton.addEventListener("click")
-//     }
-
-// }
-
 const respuestas = {
   elminster: "mago",
   absurda: "two",
