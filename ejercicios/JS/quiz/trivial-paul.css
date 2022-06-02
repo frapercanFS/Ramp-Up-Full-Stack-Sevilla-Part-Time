@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: all 0.3s;
 }
 
 body{
@@ -31,17 +32,38 @@ height: 50px;
 margin: 20px;
 border: 1px solid black;
 cursor: pointer;
+text-align: center;
+justify-content: center;
+
 }
 .button:hover{
     background-color: #f1849d;
     transform: scale(1.1);
 }
 
-#siguiente-pregunta .button{
+#proxima-pregunta .button{
     background-color: rgb(76, 135, 212);
+    display: none;
+    margin: auto;
+    margin-top: 50px;
 } 
-#siguiente-pregunta .button:hover{
+#proxima-pregunta .button:hover{
     background-color: rgb(117, 172, 243);
     transform: scale(1.1);
 
 } 
+#puntuacion-final{
+    font-weight: bolder;
+    font-size: large;
+}
+
+#puntuacion-perfecta{
+    font-weight: bolder;
+    font-size: x-large;
+    color: red;
+}
+
+#puntuacion-perfecta:hover{
+transition: 0.8s;
+    color: blue;
+}

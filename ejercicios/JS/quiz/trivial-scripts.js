@@ -31,16 +31,16 @@ for (let pregunta of preguntas) {
     listaPreguntas.push(new Pregunta(pregunta.pregunta, pregunta.opciones, pregunta.respuesta));
 
 }
+
 let htmlNuevo = "";
 for (let pregunta of listaPreguntas) {
     htmlNuevo += imprimePregunta(pregunta);
-}
-
+} 
 function imprimePregunta(pregunta) {
     let newHTML = "";
 
     newHTML += imprimeTitulo(pregunta);
-    newHTML += imprimeTodasLasRespuestas(pregunta);
+     newHTML += imprimeTodasLasRespuestas(pregunta); 
 
     return newHTML;
 }
@@ -48,9 +48,10 @@ function imprimePregunta(pregunta) {
 function imprimeTitulo(pregunta) {
     let tituloPregunta = pregunta.pregunta;
     document.getElementById("pregunta").innerText = tituloPregunta;
-}
 
-function imprimeTodasLasRespuestas(pregunta) {
+}
+console.log(preguntas)
+ function imprimeTodasLasRespuestas(pregunta) {
 
     for (let i = 0; i < pregunta.opciones.length; i++) {
         const opcion = document.createElement("button");
@@ -70,21 +71,21 @@ function imprimeTodasLasRespuestas(pregunta) {
         else {
             e.target.style.backgroundColor = "red";
         }
-        SiguientePregunta()
-        console.log(score)
-        console.log(pregunta.comprobarOpcion(opcionElegida))
-        console.log(opcionElegida)
+  SiguientePregunta()
     }
 }
-function SiguientePregunta(){
-    const sigueinteBoton = document.createElement("button");
-sigueinteBoton.innerText = "Siguiente Pregunta";
-sigueinteBoton.className = 'button';
-document.getElementById("siguiente-pregunta").appendChild(sigueinteBoton);
-sigueinteBoton.addEventListener("click", reemplazarPreguntas);
+      
+function SiguientePregunta() {
+/*     const sigueinteBoton = document.createElement("button");
+    sigueinteBoton.innerText = "Siguiente Pregunta";
+    sigueinteBoton.className = 'button';
+    document.getElementById("siguiente-pregunta").appendChild(sigueinteBoton);
+    sigueinteBoton.addEventListener("click", reemplazarPreguntas); */
+document.getElementById("siguiente-pregunta").style.display = "block";
 
 }
 
-function reemplazarPreguntas(){
-
+function reemplazarPreguntas() {
+console.log("siguiente")
 }
+ 
