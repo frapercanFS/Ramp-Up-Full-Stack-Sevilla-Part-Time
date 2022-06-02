@@ -1,6 +1,5 @@
 window.onload = aplicarFunciones;
 
-
 const colors = [
   "03045e",
   "023e8a",
@@ -54,7 +53,9 @@ function cambiarImagenOnClick() {
 }
 
 function cambiarImagen(e) {
+  
   e.target.src = getRandom(gifs)
+
 }
 
 function cambiarEstiloParrafosOnClick() {
@@ -119,4 +120,8 @@ function cambiarBackgroundColorAleatorio(e) {
   console.log(getRandom(colors));
 
   e.target.style.backgroundColor = "#" + getRandom(colors);
+
+
+  e.target.src = imagenAnterior;
+
 }
