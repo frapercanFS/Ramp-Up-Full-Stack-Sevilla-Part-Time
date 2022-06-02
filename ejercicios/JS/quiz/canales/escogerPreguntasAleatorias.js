@@ -3,13 +3,14 @@ export function escogerPreguntasAleatorias(preguntas, numeroPreguntas) {
   let escogidas = [];
 
   while (escogidas.length != numeroPreguntas) {
-    let indiceEscogida = Math.floor(Math.random()* preguntasPorEscoger.length) ;
-    escogidas.push(preguntasPorEscoger[indiceEscogida]);
-    preguntasPorEscoger.splice(indiceEscogida);
-
-
-
+    const [escogida, indice] = escoger(preguntasPorEscoger);
+    preguntasPorEscoger = preguntasPorEscoger.splice(indice);
+    escogidas.push(escogida);
   }
-  console.log(escogidas)
   return escogidas;
+}
+
+function escoger(lista) {
+  var index = Math.floor(Math.random() * lista.length);
+  return [lista[index], index];
 }
