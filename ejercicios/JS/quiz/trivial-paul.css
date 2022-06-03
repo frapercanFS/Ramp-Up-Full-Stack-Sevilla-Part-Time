@@ -1,69 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     transition: all 0.3s;
+    color: rgb(109, 3, 109);
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aquamarine;
+    background-color: rgb(109, 3, 109);
     height: 100vh;
+    
 }
-#trivial{
+
+#trivial {
     background-color: aliceblue;
     width: 30rem;
     padding: 4rem;
     text-align: center;
+
 }
 
-#opciones{
+#opciones {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 }
-.button{
-background-color: #EF476F;
-color: white;
-width: 150px;
-height: 50px;
-margin: 20px;
-border: 1px solid black;
-cursor: pointer;
-text-align: center;
-justify-content: center;
+
+.button {
+    background-color: rgb(109, 3, 109);
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
 
 }
-.button:hover{
-    background-color: #f1849d;
+
+.button:hover {
+    background-color: #920792;
     transform: scale(1.1);
 }
 
-#proxima-pregunta .button{
+#proxima-pregunta .button {
     background-color: rgb(76, 135, 212);
     display: none;
     margin: auto;
     margin-top: 50px;
-} 
-#proxima-pregunta .button:hover{
+}
+
+#proxima-pregunta .button:hover {
     background-color: rgb(117, 172, 243);
     transform: scale(1.1);
 
-} 
-#puntuacion-final{
+}
+
+#puntuacion-final {
     font-weight: bolder;
     font-size: large;
 }
 
-#puntuacion-perfecta{
+#puntuacion-perfecta {
     font-weight: bolder;
     font-size: x-large;
     color: red;
 }
 
-#puntuacion-perfecta:hover{
-transition: 0.8s;
+#puntuacion-perfecta:hover {
+    transition: 0.8s;
     color: blue;
+}
+
+#contenedor-bar {
+    width: 10rem;
+    height: 2rem;
+    background-color: rgb(209, 219, 219);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1rem;
+    display: none;
+    position: relative;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: purple;
+    width: 0%;
+    border-radius: 20px;
+    position: absolute;
+
 }
