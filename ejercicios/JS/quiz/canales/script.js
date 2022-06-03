@@ -1,8 +1,10 @@
-import Trivial from "./trivial.js";
-import Pregunta from "./pregunta.js";
+import Trivial from "./clases/trivial.js";
+import Pregunta from "./clases/pregunta.js";
 import { preguntas } from "./preguntas.js";
-import {comprobarSolucion} from "./comprobarSolucion.js"
-import {escogerPreguntasAleatorias} from "./escogerPreguntasAleatorias.js"
+import { comprobarSolucion } from "./funciones/comprobarSolucion.js";
+import { escogerPreguntasAleatorias } from "./funciones/escogerPreguntasAleatorias.js";
+
+import { numeroPreguntas } from "./parametros.js";
 
 // Leemos el fichero de preguntas
 let listaPreguntas = [];
@@ -18,7 +20,7 @@ for (let pregunta of preguntas) {
   );
 }
 
-listaPreguntas = escogerPreguntasAleatorias(listaPreguntas,2)
+listaPreguntas = escogerPreguntasAleatorias(listaPreguntas, numeroPreguntas);
 
 let trivial = new Trivial(listaPreguntas);
 
@@ -29,6 +31,6 @@ document
   .querySelector('form[id="dinamico"]')
   .addEventListener("submit", (event) => {
     event.preventDefault();
-    comprobarSolucion(document.innerHTML,trivial)
-    location.reload(); 
+    comprobarSolucion(document.innerHTML, trivial);
+    location.reload();
   });
