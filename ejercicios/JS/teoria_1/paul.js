@@ -60,7 +60,9 @@ const foodList1 = [
         isVeggie: false
     }
 ];
-let proximaComida = foodList1.filter(menu => menu.isVeggie == true).map(comida => `Que rico ${comida.name} me voy a comer!`)
+let proximaComida = foodList1
+.filter(menu => menu.isVeggie == true)
+.map(comida => `Que rico ${comida.name} me voy a comer!`)
 console.log(proximaComida)
 
 const inventory = [
@@ -85,7 +87,7 @@ let listaDePapaNoel = inventory.filter(objetos => objetos.price > 300).map(objet
 console.log(listaDePapaNoel)
 const numeros2 = [39, 2, 4, 25, 62];
 let acumulado = numeros2.reduce(function(anterior, actual, indice, vector){
-    return anterior + actual;
+    return anterior * actual;
   });
   console.log(acumulado)
   const sentenceElements = [
