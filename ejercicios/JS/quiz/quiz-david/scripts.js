@@ -4,20 +4,20 @@ const plantillaPreguntas = [
   {
       pregunta: "¿De qué color era el caballo blanco de Santiago?",
       respuesta: [
-          { opcion: "Blanco" },
-          { opcion: "Negro" },
-          { opcion: "Marrón" },
-          { opcion: "Santiago no tenía caballo" }
+          "Blanco",
+          "Negro",
+          "Marrón",
+          "Santiago no tenía caballo"
       ],
       solucion: "Blanco"
   },
   {
       pregunta: "¿Quien engaño a Roger Rabbit?",
       respuesta: [
-          { opcion: "Jessica Rabbit" },
-          { opcion: "Maroon" },
-          { opcion: "Dumbo" },
-          { opcion: "Las comadrejas" }
+          "Jessica Rabbit",
+          "Maroon",
+          "Dumbo",
+          "Las comadrejas"
       ],
       solucion: "Maroon"
 
@@ -25,10 +25,10 @@ const plantillaPreguntas = [
   {
       pregunta: "¿Porque el cielo es gris?",
       respuesta: [
-          { opcion: "Por la dispersar luz con longitud de onda corta en la atmosfera" },
-          { opcion: "No lo sé" },
-          { opcion: "Es así cuando los Dioses están contento y rojo cuando se enfadan" },
-          { opcion: "Reflexion de la luz del sol con los oceanos" }
+          "Por la dispersar luz con longitud de onda corta en la atmosfera",
+          "No lo sé",
+          "Es así cuando los Dioses están contento y rojo cuando se enfadan",
+          "Reflexion de la luz del sol con los oceanos"
       ],
       solucion: "Por la dispersar luz con longitud de onda corta en la atmosfera"
 
@@ -37,10 +37,10 @@ const plantillaPreguntas = [
   {
       pregunta: "Si vamos en una carrera y adelantamos al segundo¿En qué puesto vamos?",
       respuesta: [
-          { opcion: "Segundo" },
-          { opcion: "Primero" },
-          { opcion: "Seríamos campeones de la carrera" },
-          { opcion: "Faltan datos para poder averiguarlo, pero aproximadamente es el log2" }
+          "Segundo",
+          "Primero",
+          "Seríamos campeones de la carrera",
+          "Faltan datos para poder averiguarlo, pero aproximadamente es el log2"
       ],
       solucion: "Segundo"
 
@@ -48,77 +48,68 @@ const plantillaPreguntas = [
   {
       pregunta: "Quien tiene el record del mundo en velocidad?",
       respuesta: [
-          { opcion: "Usain Bolt" },
-          { opcion: "Sonic" },
-          { opcion: "Speddy González" },
-          { opcion: "Flash" }
+          "Usain Bolt",
+          "Sonic",
+          "Speddy González",
+          "Flash"
       ],
       solucion: "Usain Bolt"
 
   }  //Añadir en ésta línea más plantillas preguntas-respuesta-soluciones.
 ]
 
-//const listaPreguntas nos un array cuyos valores son las preguntas del quiz.
-const listaPreguntas = plantillaPreguntas.map(escribePregunta => escribePregunta.pregunta); {
-  listaPreguntas.toString().replace(/,/g, " ");
-}
-
-//const listaRespuestas nos un array cuyos valores son las respuestas del quiz.
-const listaRespuestas = plantillaPreguntas.map(escribeRespuesta => escribeRespuesta.respuesta); {
-}
-//const listaSoluciones nos un array cuyos valores son las soluciones del quiz.
-const listaSoluciones = plantillaPreguntas.map(escribeSolucion => escribeSolucion.solucion); {
-}
-function enlazarHTML (plantillaPreguntas) {
-  let newHTML = "";
-
-  newHTML += listaPreguntas(plantillaPreguntas);
-  
-}
-
-
-/*Variables
-import {const preguntas} from './funcionalidad.js';
-
-
-
-//Funciones
-class Pregunta {
-  constructor(titulo, respuestas, solucion) {
-    this.titulo = titulo;
-    this.respuestas = respuestas;
+class GeneradorQuiz {
+  constructor(pregunta, respuesta, solucion) {
+    this.pregunta = pregunta;
+    this.respuesta = respuesta;
     this.solucion = solucion;
   }
 }
 
-let listaPreguntas = [];
 
-for (let pregunta of preguntas) {
-  listaPreguntas.push(
-    new Pregunta(pregunta.titulo, pregunta.respuestas, pregunta.solucion)
+let editorPreguntas = [];
+
+for (let unaPregunta of plantillaPreguntas) {
+  editorPreguntas.push(
+    new GeneradorQuiz(unaPregunta.pregunta, unaPregunta.respuesta, unaPregunta.solucion)
   );
 }
 
-function imprimePregunta(pregunta) {
+console.log(editorPreguntas)
+
+function tarjetasHTML(unaPregunta) {
   let newHTML = "";
 
-  newHTML += imprimeTitulo(pregunta);
-  newHTML += imprimeTodasLasRespuestas(pregunta);
+  newHTML += imprimePregunta(unaPregunta);
+  newHTML += imprimeTodasLasRespuestas(unaPregunta);
   // newHTML += imprimeBotonSubmit();
-
+  document.getElementById("quiz-game").innerHTML = htmlNuevo;
   return newHTML;
 }
 
-function imprimeTitulo(pregunta) {
-  return "<p>".concat(pregunta.titulo, "</p>");
+
+/*
+function GenerarQuiz(plantillaPreguntas) {
+  let newHTML = "";
+
+  newHTML += imprimePregunta(plantillaPreguntas);
+  newHTML += imprimeTodasLasRespuestas(plantillaPreguntas);
+  // newHTML += imprimeBotonSubmit();
+  document.getElementById("quiz-game").innerHTML = htmlNuevo;
+  return newHTML;
 }
 
-function imprimeTodasLasRespuestas(pregunta) {
+
+function imprimeTodasLasRespuestas(plantillaPreguntas) {
   let composicion = [];
-  for (let respuesta of pregunta.respuestas) {
-    composicion.push(imprimeUnaRespuesta(respuesta));
+  for (let opciones of plantillaPreguntas.respuesta) {
+    composicion.push(imprimeUnaRespuesta(opciones));
   }
   return composicion.toString().replace(/,/g, " ");
+}
+
+function imprimeTitulo(plantillaPreguntas) {
+  return "<p>".concat(plantillaPreguntas.pregunta, "</p>");
 }
 
 function imprimeUnaRespuesta(respuesta) {
@@ -149,9 +140,9 @@ function imprimeBotonSubmit() {
   return '<button type="submit">Comprobar</button> ';
 }
 
-function comprobar(pregunta) {
-  console.log(document.getElementById(pregunta.solucion).checked);
-  if (document.getElementById(pregunta.solucion).checked) {
+function comprobar(plantillaPreguntas) {
+  console.log(document.getElementById(plantillaPreguntas.solucion).checked);
+  if (document.getElementById(plantillaPreguntas.solucion).checked) {
     alert("Correcto");
   } else {
     alert("Incorrecto");
@@ -164,26 +155,26 @@ for (let pregunta of listaPreguntas) {
 }
 htmlNuevo += imprimeBotonSubmit();
 
-document.getElementById("dinamico").innerHTML = htmlNuevo;
+document.getElementById("quiz-game").innerHTML = htmlNuevo;
 
 document
-  .querySelector('form[id="dinamico"]')
+  .querySelector('form[id="quiz-game"]')
   .addEventListener("submit", (event) => {
     event.preventDefault();
 
 let resultado =[];
 
-for (let pregunta of listaPreguntas) {
+for (let plantillaPreguntas of listaPreguntas) {
   for (let input of document.getElementsByName(
-    pregunta.respuestas[0].name
+    plantillaPreguntas.respuesta[0].name
   )) {
-    if (input.checked == true && input.value != pregunta.solucion) {
-      resultado.push(Respuesta incorrecta)
+    if (input.checked == true && input.value != plantillaPreguntas.solucion) {
+      resultado.push("Respuesta incorrecta")
       for (let i=0;i<resultado.length)
     }
   }
 }
-
+*/
     /*
    True si todas están bien, Si alguna erronea False
     let resultado = true;

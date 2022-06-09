@@ -4,10 +4,10 @@
   {
     pregunta: "",
     respuesta: [
-    { opcion: ""},
-    { opcion: ""},
-    { opcion: ""},
-    { opcion: ""}
+    "",
+    "",
+    "",
+    ""
     ],
     solucion: ""
   }
