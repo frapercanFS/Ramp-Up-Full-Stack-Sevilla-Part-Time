@@ -77,116 +77,20 @@ for (let unaPregunta of plantillaPreguntas) {
 
 console.log(editorPreguntas)
 
-function tarjetasHTML(unaPregunta) {
-  let newHTML = "";
 
-  newHTML += imprimePregunta(unaPregunta);
-  newHTML += imprimeTodasLasRespuestas(unaPregunta);
-  // newHTML += imprimeBotonSubmit();
-  document.getElementById("quiz-game").innerHTML = htmlNuevo;
-  return newHTML;
-}
+const tarjetaPregunta = editorPreguntas.map(fichas => fichas.pregunta);
+const tarjetaRespuestas = editorPreguntas.map(fichas => fichas.respuesta);
+const tarjetasolucion = editorPreguntas.map(fichas => fichas.solucion);
 
 
-/*
-function GenerarQuiz(plantillaPreguntas) {
-  let newHTML = "";
+//document.getElementById("respuestaHTML").innerHTML = tarjetaRespuestas
+console.log(3, tarjetaPregunta)
+console.log("prueba", tarjetaPregunta[1])
 
-  newHTML += imprimePregunta(plantillaPreguntas);
-  newHTML += imprimeTodasLasRespuestas(plantillaPreguntas);
-  // newHTML += imprimeBotonSubmit();
-  document.getElementById("quiz-game").innerHTML = htmlNuevo;
-  return newHTML;
-}
+let fichaHTML = [""];
+function pasarHTML (){
 
+  for(let pregunta of tarjetaPregunta)
+  fichaHTML.push(tarjetaPregunta[0])
 
-function imprimeTodasLasRespuestas(plantillaPreguntas) {
-  let composicion = [];
-  for (let opciones of plantillaPreguntas.respuesta) {
-    composicion.push(imprimeUnaRespuesta(opciones));
-  }
-  return composicion.toString().replace(/,/g, " ");
-}
-
-function imprimeTitulo(plantillaPreguntas) {
-  return "<p>".concat(plantillaPreguntas.pregunta, "</p>");
-}
-
-function imprimeUnaRespuesta(respuesta) {
-  let newHTML = "";
-
-  newHTML += imprimeLabel(respuesta);
-  newHTML += imprimeInput(respuesta);
-
-  return newHTML;
-}
-
-function imprimeLabel(respuesta) {
-  return '<label for="'.concat(respuesta.id, '">', respuesta.label, "</label>");
-}
-
-function imprimeInput(respuesta) {
-  return '<input type="radio" id="'.concat(
-    respuesta.id,
-    '" name="',
-    respuesta.name,
-    '" value="',
-    respuesta.value,
-    '"> '
-  );
-}
-
-function imprimeBotonSubmit() {
-  return '<button type="submit">Comprobar</button> ';
-}
-
-function comprobar(plantillaPreguntas) {
-  console.log(document.getElementById(plantillaPreguntas.solucion).checked);
-  if (document.getElementById(plantillaPreguntas.solucion).checked) {
-    alert("Correcto");
-  } else {
-    alert("Incorrecto");
-  }
-}
-
-htmlNuevo = "";
-for (let pregunta of listaPreguntas) {
-  htmlNuevo += imprimePregunta(pregunta);
-}
-htmlNuevo += imprimeBotonSubmit();
-
-document.getElementById("quiz-game").innerHTML = htmlNuevo;
-
-document
-  .querySelector('form[id="quiz-game"]')
-  .addEventListener("submit", (event) => {
-    event.preventDefault();
-
-let resultado =[];
-
-for (let plantillaPreguntas of listaPreguntas) {
-  for (let input of document.getElementsByName(
-    plantillaPreguntas.respuesta[0].name
-  )) {
-    if (input.checked == true && input.value != plantillaPreguntas.solucion) {
-      resultado.push("Respuesta incorrecta")
-      for (let i=0;i<resultado.length)
-    }
-  }
-}
-*/
-    /*
-   True si todas están bien, Si alguna erronea False
-    let resultado = true;
-    for (let pregunta of listaPreguntas) {
-      for (let input of document.getElementsByName(
-        pregunta.respuestas[0].name
-      )) {
-        if (input.checked == true && input.value != pregunta.solucion) {
-          resultado = false;
-          for (let i=0;i<resultado.length)
-        }
-      }
-    }
-    alert(resultado);
-  });*/
+}console.log(fichaHTML)
