@@ -12,7 +12,8 @@ function guardarDatos(e) {
                  email: inputEmail.value,
                  mensaje: inputMensaje.value,
                  imagen: inputImagen.value }
-    localStorage.setItem("usuarios", JSON.stringify(user));
+                 
+    localStorage.setItem(user.correo, JSON.stringify(user));
    var datosFormulario = localStorage.getItem("usuarios");  
 
    console.log(user)
