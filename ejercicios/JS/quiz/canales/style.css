@@ -1,0 +1,16 @@
+#container {
+    border-color: black;
+    border-style: solid;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-left: 0px !important; 
+    margin-bottom: 0px !important; 
+
+    background-color: aqua;
+
+}
