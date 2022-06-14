@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Pagina web Ramp-up"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ramp-Up-Full-Stack-Sevilla-Part-Time"
+	}
+}
