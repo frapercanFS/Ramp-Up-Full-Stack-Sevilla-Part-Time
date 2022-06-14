@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script defer src="paul.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <form action="/action_page.php">
         <label for="fname">Nombre</label><br>
@@ -22,11 +24,26 @@
         <label for="imagen">URL imagen</label><br>
         <input type="url" id="imagen" name="imagen" value="URL de tu imagen"><br><br>
 
-        <input type="submit" id="submit" value="Submit" >
-        
-            <button id="boton-borrar">Borrar Usuario</button>
-            <div id="opciones-borrado" ></div>
-        
-      </form>
+        <input type="submit" id="submit" value="Submit">
+        <button  id="boton-borrar">Borrar Usuario</button>
+        <div id="opciones-borrado"></div>
+
+
+    </form>
+    <div class="contenedor">
+        <h2>Usuarios Registrados:</h2>
+            <div id="usuarios-registrados">
+               
+            </div>
+
+    </div>
+    <div class="contenedor">
+        <h2>Usuarios Eliminados:</h2>
+            <div id="usuarios-eliminados">
+               
+            </div>
+
+    </div>
 </body>
+
 </html>
