@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.logo {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5%;
+}
+.logo > .imagen-logo {
+    position:absolute;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.tarjeta {
+    background-color: #6c6ca6;
+}
+
+#preguntas {
+    border: solid black;
+}
+.respuestas {
+    border: solid red;
+}
+.boton {
+    border: solid blue;
+}
