@@ -17,11 +17,10 @@
 function mostrarRazas() {
     fetch('https://dog.ceo/api/breeds/list/all')
         .then(res => res.json())
-        .then(res => JSON.stringify(res))
         .then(function listar(res) {
-            let lista = JSON.parse(res)
-            let razas = lista.message
-            console.log(razas)
-            document.getElementById("razas").innerHTML = Object.values(razas);
+            let lista = JSON.stringify(res.message)
+            console.log(res.message)
+            let razasFiltradas = lista.filter()
+            document.getElementById("razas").innerHTML = lista;
         })
 }
