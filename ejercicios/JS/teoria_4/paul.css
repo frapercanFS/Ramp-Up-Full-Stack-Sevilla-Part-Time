@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,4 +14,51 @@ form{
     flex-direction: column;
     margin: 100px;
     padding: 10px;
+
+}
+
+button {
+    margin-top: 20px;
+}
+
+#opciones-borrado {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor {
+    display: flex;
+
+    border: 1px black solid;
+    flex-direction: column;
+    margin: 100px;
+    padding: 10px;
+}
+
+#usuarios-registrados li {
+    color: green;
+}
+
+#usuarios-eliminados li {
+    color: red;
+}
+
+ul {
+    list-style: none;
+}
+
+#opciones-borrado {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#botones-borrado {
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="canales.js"></script>
+  </head>
+  <body onload="listarPerrosParaOpciones()">
+    <img src="" alt="" />
+    <button onclick="listarPerros()">Mostrar razas de Perro</button>
+    <button onclick="fotoRandomPerro()">Mostar perro Aleatorio</button>
+    <div id="imagenRandomPerro"></div>
+    <ul id="razas"></ul>
+    <label for="listaRazas">Raza</label>
+    <input list="listaRazas" name="raza" id="raza" />
+    <datalist id="listaRazas"> </datalist>
+    <button onclick="mostrarFotosRazaEspecifica()">
+      Imprimir fotos de raza
+    </button>
+    <div id="imagenesPerrosRaza"></div>
+  </body>
+</html>
