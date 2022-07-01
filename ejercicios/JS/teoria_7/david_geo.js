@@ -1,8 +1,5 @@
 //Obetener ubicacion
 
-//  console.log(`${position.coords.latitude}, ${position.coords.longitude}`)
-
-//Otra
 let miUbicacion = [];
 navigator.geolocation.watchPosition(position => {
     let latitud = position.coords.latitude;
@@ -12,7 +9,7 @@ navigator.geolocation.watchPosition(position => {
 
 
     const mapId = 'map';
-    // Plaza Sol en Madrid [lat, lng]
+
     const map = L.map(mapId).setView(miUbicacion, 13);
     const MAPBOX_API = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}'
     const ATTRIBUTION =
