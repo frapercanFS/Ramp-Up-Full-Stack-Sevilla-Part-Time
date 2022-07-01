@@ -75,5 +75,6 @@ dist
 .dynamodb/
 # TernJS port file
 .tern-port
-
+package.json
+package-lock.json
 node_modules
