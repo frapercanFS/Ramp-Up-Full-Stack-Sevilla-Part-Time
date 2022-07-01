@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="david_teoria4.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="fname">Nombre</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" value="Doe@gmail.com"><br><br>
+
+        <label for="mensaje">Mensaje</label><br>
+        <input type="text" id="mensaje" name="mensaje" value="Escribe tu mensaje"><br>
+
+        <label for="imagen">URL imagen</label><br>
+        <input type="text" id="imagen" name="imagen" value="URL de tu imagen"><br><br>
+
+        <input type="submit" id="submit" value="Submit" onclick="mostrarDatos()">
+        <button onclick="borrarDatos()">Limpiar memoria</button>
+      </form>
+      <div id="mostrarResultado">
+        <span id="indice"></span>
+<span id="nombre"></span>
+<span id="email"></span>
+<span id="mensaje"></span>
+<span id="url"></span>
+      </div>
+</body>
+</html>
