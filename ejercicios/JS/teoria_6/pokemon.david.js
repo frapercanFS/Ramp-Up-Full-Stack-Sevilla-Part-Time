@@ -5,7 +5,7 @@
 const fetch = (url) => import('node-fetch').then(({ default: fetch }) => fetch(url));
 let soluciones = [];
 async function ObtenerPokemons() {
-    let apiPokemon = await fetch(`https://pokeapi.co/api/v2/pokemon`);
+    let apiPokemon = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`);
     let propiedadesPokemon = await apiPokemon.json()   // let miMap = new Map();
     let datosPokemon = await propiedadesPokemon.results;
 
