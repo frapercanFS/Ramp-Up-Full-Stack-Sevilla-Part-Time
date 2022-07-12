@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,39 +14,48 @@ form{
     flex-direction: column;
     margin: 100px;
     padding: 10px;
+
 }
-button{
+
+button {
     margin-top: 20px;
 }
-#opciones-borrado{
+
+#opciones-borrado {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.contenedor{
+
+.contenedor {
     display: flex;
 
-   border: 1px black solid;
+    border: 1px black solid;
     flex-direction: column;
     margin: 100px;
     padding: 10px;
 }
-#usuarios-registrados li{
+
+#usuarios-registrados li {
     color: green;
 }
-#usuarios-eliminados li{
+
+#usuarios-eliminados li {
     color: red;
 }
-ul{
+
+ul {
     list-style: none;
 }
-#opciones-borrado{
+
+#opciones-borrado {
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-#botones-borrado{
+
+#botones-borrado {
     margin: auto;
     margin-top: 15px;
     justify-content: center;
