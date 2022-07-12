@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario LocalStorage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="canales.css" />
+    <script src="canales.js"></script> 
+  </head>
+  <body onload="mostrarUsuarios()">
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+      <label for="correo">Correo</label>
+      <input type="email" name="correo" id="correo" />
+      <label for="mensaje">Mensaje</label>
+      <input type="text" name="mensaje" id="mensaje" />
+      <label for="URL">URL</label>
+      <input type="url" name="URL" id="URL" />
+      <button type="submit" id="submit" onclick="guardarDatos()">submit</button>
+      <button type="button" class="btn" onclick="borrarDatos()">
+        <i class="fa fa-trash"></i> Trash
+      </button>
+    </form>
+    <div id="usuarios"></div>
+  </body>
+
+  <script>
+    window.onload(mostrarUsuarios());
+
+  </script>
+</html>
