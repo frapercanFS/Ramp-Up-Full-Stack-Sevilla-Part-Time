@@ -91,7 +91,7 @@ listaPersonajes().then(respuesta => {
 
     const ctx = document.getElementById('personajes');
     const myChart = new Chart(ctx, {
-        type: 'line',
+        type: 'bar',
         data: {
             labels: respuesta.ejeX,
             datasets: [{
@@ -124,4 +124,5 @@ listaPersonajes().then(respuesta => {
             }
         }
     });
-}) 
+})
+
