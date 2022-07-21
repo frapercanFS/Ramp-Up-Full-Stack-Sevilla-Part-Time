@@ -19,21 +19,20 @@ data = Object.entries(traducciones).map((entrada) => {
       );
   } else {
     DatosNivelDos = traducciones[clave];
-    if (traducciones[clave] instanceof String) {
-      Object.entries(DatosNivelDos).map((entradaDos) => {
-        let claveDos = entradaDos[0];
-        let valorDos = entradaDos[1];
 
-        traducir(valorDos)
-          .then(
-            (cadenaTraducidaDos) =>
-              (traducciones[clave][claveDos] = cadenaTraducidaDos)
-          )
-          .then(() =>
-            writeFileSync("translation-es.json", JSON.stringify(traducciones))
-          );
-      });
-    }
+    Object.entries(DatosNivelDos).map((entradaDos) => {
+      let claveDos = entradaDos[0];
+      let valorDos = entradaDos[1];
+
+      traducir(valorDos)
+        .then(
+          (cadenaTraducidaDos) =>
+            (traducciones[clave][claveDos] = cadenaTraducidaDos)
+        )
+        .then(() =>
+          writeFileSync("translation-es.json", JSON.stringify(traducciones))
+        );
+    });
   }
 });
 
