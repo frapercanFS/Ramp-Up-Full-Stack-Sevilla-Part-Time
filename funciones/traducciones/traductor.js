@@ -1,6 +1,6 @@
 const deepl = require('deepl-node');
 
-const authKey = "9d607fdb-762b-fe7a-2e55-d8b23bbc18a4:fx"; // Replace with your key
+const authKey = ""; // Replace with your key
 const translator = new deepl.Translator(authKey);
 
 const { writeFileSync, readFileSync } = require('fs');
