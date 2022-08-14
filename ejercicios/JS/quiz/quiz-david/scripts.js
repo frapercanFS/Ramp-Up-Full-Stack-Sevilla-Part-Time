@@ -75,29 +75,25 @@ for (let unaPregunta of plantillaPreguntas) {
   );
 }
 
-console.log(editorPreguntas)
+//console.log(editorPreguntas)
 
 function tarjetasHTML(unaPregunta) {
   let newHTML = "";
 
   newHTML += imprimePregunta(unaPregunta);
   newHTML += imprimeTodasLasRespuestas(unaPregunta);
-  // newHTML += imprimeBotonSubmit();
-  document.getElementById("quiz-game").innerHTML = htmlNuevo;
+  newHTML += imprimeBotonSubmit();
+  document.getElementById("quiz-game").innerHTML = newHTML;
+  //  document.getElementById("quiz-game").innerHTML = htmlNuevo;
   return newHTML;
 }
 
+function imprimePregunta(plantillaPreguntas) {
+  return "<p>".concat(plantillaPreguntas.pregunta, "</p>");
+}
+console.log(unaPregunta.pregunta)
 
 /*
-function GenerarQuiz(plantillaPreguntas) {
-  let newHTML = "";
-
-  newHTML += imprimePregunta(plantillaPreguntas);
-  newHTML += imprimeTodasLasRespuestas(plantillaPreguntas);
-  // newHTML += imprimeBotonSubmit();
-  document.getElementById("quiz-game").innerHTML = htmlNuevo;
-  return newHTML;
-}
 
 
 function imprimeTodasLasRespuestas(plantillaPreguntas) {
