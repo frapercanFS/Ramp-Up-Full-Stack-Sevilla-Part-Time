@@ -17,10 +17,10 @@ con.connect(function (err) {
 
   //Acceso a la API
   const request = require("request");
-  var model = "camry";
+  var model = ["toyota", "audi", "ford", "volkswagen"];
   request.get(
     {
-      url: "https://api.api-ninjas.com/v1/cars?model=" + model,
+      url: "https://api.api-ninjas.com/v1/cars?make=" + model,
       headers: {
         "X-Api-Key": "YFAGMTkZFuDdhMNn2HAipQ==w4rdzoAOMdpaHAKs",
       },
