@@ -1,69 +1,53 @@
 nav {
-    background-color: #25259f;
-    width: 100%;
-
+  background-color: #3e3ede;
+  width: 100%;
 }
 
 header {
-    background-color: #187b1882;
-
-
-
-
+  background-color: #23eb23b1;
 }
 
 main {
-    background-color: #760707;
-
-
-
+  background-color: #c33232;
 }
 
 .sidebar {
-    background-color: rgba(105, 30, 105, 0.751);
-
-
-
+  background-color: rgba(180, 66, 180, 0.751);
 }
 
 footer {
-    background-color: grey;
-    width: 100%;
-
+  background-color: grey;
+  width: 100%;
 }
 
 body {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: auto;
-    justify-content: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
-    .sidebar {
-        width: 30%;
-    }
+  .sidebar {
+    width: 30%;
+  }
 
-    main {
-        width: 70%;
-    }
-
+  main {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 992px) {
-            
-            header {
-                flex-wrap: nowrap;
-                flex-basis: 70%;
-            }
-            main {
-                flex-basis: 45%;
-
-            }
-            .sidebar {
-                flex-basis: 25%;
-            }
-        
+  header {
+    flex-wrap: nowrap;
+    flex-basis: 70%;
+  }
+  main {
+    flex-basis: 45%;
+  }
+  .sidebar {
+    flex-basis: 25%;
+  }
 }

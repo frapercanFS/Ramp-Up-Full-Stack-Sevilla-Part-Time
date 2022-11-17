@@ -1,42 +1,45 @@
 body {
-    text-align: center;
+  text-align: center;
+  background-image: url("https://img.freepik.com/fotos-premium/antiguo-manuscrito-papel-o-papiro-desplazarse-verticalmente-orientado-aislado-sobre-fondo-blanco_152391-19.jpg?w=2000");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: max-content;
 }
-header h1 {
-    font-family: 'Brush Script MT', cursive;
-    }
+header {
+  font-family: "Brush Script MT", cursive;
+  margin-top: 10%;
+}
 
 ol {
-    line-height: 1.6;
-
-    }
+  line-height: 1.6;
+}
 
 main h3 {
-    font-family: 'Square Peg', cursive;
-    font-size: xx-large;
-    text-align: left;
-    margin-left: 400px;
+  font-family: "Square Peg", cursive;
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 35%;
 }
 .lista {
-    border-style: solid;
-    border-radius: 15px;
-    width: 480px;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: bold;
-    
+  border-style: solid;
+  border-radius: 15px;
+  width: 480px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
 }
 p .intro {
-    font-style: italic;
+  font-style: italic;
 }
 
 footer {
-    text-align: right;
-    font-family: 'Water Brush', cursive;
-    margin-right: 25%;
+  text-align: right;
+  font-family: "Water Brush", cursive;
+  margin-right: 35%;
 }
 footer h3 {
-    text-align: right;
-    font-family: 'Times New Roman', Times, serif;
-    margin-right: 0 auto;
-
+  text-align: right;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 0 auto;
 }

@@ -9,12 +9,14 @@ fieldset {
 label {
     margin: 5px, 5px, 5px, 5px;
 }
-#dia {
-    ali
-}
+
 .legend {
     color: brown;
 }
 form {
-    margin: 0 auto;
+    margin: 5% auto;
 }
+.botones{
+    margin-top: 5%;
+}
+
